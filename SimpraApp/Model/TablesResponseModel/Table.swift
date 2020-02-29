@@ -1,5 +1,5 @@
 //
-//	Section.swift
+//	Table.swift
 //  Created by Mehmet Zeytin on 29.02.2020.
 //  Copyright © 2020 Mehmet Zeytin. All rights reserved.
 //
@@ -8,15 +8,15 @@ import Foundation
 import ObjectMapper
 
 
-class Section : NSObject, NSCoding, Mappable{
+class Table : NSObject, NSCoding, Mappable{
 
 	var id : String?
 	var name : String?
-	var type : String?
+	var revenueCenter : RevenueCenter?
 
 
 	class func newInstance(map: Map) -> Mappable?{
-		return Section()
+		return Table()
 	}
 	required init?(map: Map){}
 	private override init(){}
@@ -25,7 +25,7 @@ class Section : NSObject, NSCoding, Mappable{
 	{
 		id <- map["id"]
 		name <- map["name"]
-		type <- map["type"]
+		revenueCenter <- map["revenue_center"]
 		
 	}
 
@@ -37,7 +37,7 @@ class Section : NSObject, NSCoding, Mappable{
 	{
          id = aDecoder.decodeObject(forKey: "id") as? String
          name = aDecoder.decodeObject(forKey: "name") as? String
-         type = aDecoder.decodeObject(forKey: "type") as? String
+         revenueCenter = aDecoder.decodeObject(forKey: "revenue_center") as? RevenueCenter
 
 	}
 
@@ -53,8 +53,8 @@ class Section : NSObject, NSCoding, Mappable{
 		if name != nil{
 			aCoder.encode(name, forKey: "name")
 		}
-		if type != nil{
-			aCoder.encode(type, forKey: "type")
+		if revenueCenter != nil{
+			aCoder.encode(revenueCenter, forKey: "revenue_center")
 		}
 
 	}

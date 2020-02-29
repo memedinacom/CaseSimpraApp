@@ -1,5 +1,5 @@
 //
-//	SectionResponse.swift
+//	ViewOption.swift
 //  Created by Mehmet Zeytin on 29.02.2020.
 //  Copyright © 2020 Mehmet Zeytin. All rights reserved.
 //
@@ -8,20 +8,22 @@ import Foundation
 import ObjectMapper
 
 
-class SectionResponse : NSObject, NSCoding, Mappable{
+class ViewOption : NSObject, NSCoding, Mappable{
 
-	var sections : [Section]?
+	var name : String?
+	var value : Bool?
 
 
 	class func newInstance(map: Map) -> Mappable?{
-		return SectionResponse()
+		return ViewOption()
 	}
 	required init?(map: Map){}
 	private override init(){}
 
 	func mapping(map: Map)
 	{
-		sections <- map["sections"]
+		name <- map["name"]
+		value <- map["value"]
 		
 	}
 
@@ -31,7 +33,8 @@ class SectionResponse : NSObject, NSCoding, Mappable{
     */
     @objc required init(coder aDecoder: NSCoder)
 	{
-         sections = aDecoder.decodeObject(forKey: "sections") as? [Section]
+         name = aDecoder.decodeObject(forKey: "name") as? String
+         value = aDecoder.decodeObject(forKey: "value") as? Bool
 
 	}
 
@@ -41,8 +44,11 @@ class SectionResponse : NSObject, NSCoding, Mappable{
     */
     @objc func encode(with aCoder: NSCoder)
 	{
-		if sections != nil{
-			aCoder.encode(sections, forKey: "sections")
+		if name != nil{
+			aCoder.encode(name, forKey: "name")
+		}
+		if value != nil{
+			aCoder.encode(value, forKey: "value")
 		}
 
 	}

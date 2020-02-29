@@ -1,25 +1,27 @@
 //
-//	GroupsResponseModel.swift
-//	Model file generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
+//	ActionResponseModel.swift
+//  Created by Mehmet Zeytin on 29.02.2020.
+//  Copyright © 2020 Mehmet Zeytin. All rights reserved.
+//
 
 import Foundation 
 import ObjectMapper
 
 
-class GroupsResponseModel : NSObject, NSCoding, Mappable{
+class ActionResponseModel : NSObject, NSCoding, Mappable{
 
-	var menuItemGroups : [MenuItemGroup]?
+	var tenderMedias : [TenderMedia]?
 
 
 	class func newInstance(map: Map) -> Mappable?{
-		return GroupsResponseModel()
+		return ActionResponseModel()
 	}
 	required init?(map: Map){}
 	private override init(){}
 
 	func mapping(map: Map)
 	{
-		menuItemGroups <- map["menu_item_groups"]
+		tenderMedias <- map["tender_medias"]
 		
 	}
 
@@ -29,7 +31,7 @@ class GroupsResponseModel : NSObject, NSCoding, Mappable{
     */
     @objc required init(coder aDecoder: NSCoder)
 	{
-         menuItemGroups = aDecoder.decodeObject(forKey: "menu_item_groups") as? [MenuItemGroup]
+         tenderMedias = aDecoder.decodeObject(forKey: "tender_medias") as? [TenderMedia]
 
 	}
 
@@ -39,8 +41,8 @@ class GroupsResponseModel : NSObject, NSCoding, Mappable{
     */
     @objc func encode(with aCoder: NSCoder)
 	{
-		if menuItemGroups != nil{
-			aCoder.encode(menuItemGroups, forKey: "menu_item_groups")
+		if tenderMedias != nil{
+			aCoder.encode(tenderMedias, forKey: "tender_medias")
 		}
 
 	}

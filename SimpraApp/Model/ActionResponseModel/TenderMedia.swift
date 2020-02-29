@@ -1,21 +1,23 @@
 //
-//	Group.swift
-//	Model file generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
+//	TenderMedia.swift
+//  Created by Mehmet Zeytin on 29.02.2020.
+//  Copyright © 2020 Mehmet Zeytin. All rights reserved.
+//
 
 import Foundation 
 import ObjectMapper
 
 
-class Group : NSObject, NSCoding, Mappable{
+class TenderMedia : NSObject, NSCoding, Mappable{
 
 	var id : String?
-	var menuItemCountByGroup : [MenuItemCountByGroup]?
 	var name : String?
-	var groups : [Group]?
+	var type : String?
+	var viewOptions : [ViewOption]?
 
 
 	class func newInstance(map: Map) -> Mappable?{
-		return Group()
+		return TenderMedia()
 	}
 	required init?(map: Map){}
 	private override init(){}
@@ -23,9 +25,9 @@ class Group : NSObject, NSCoding, Mappable{
 	func mapping(map: Map)
 	{
 		id <- map["id"]
-		menuItemCountByGroup <- map["menu_item_count_by_group"]
 		name <- map["name"]
-		groups <- map["groups"]
+		type <- map["type"]
+		viewOptions <- map["view_options"]
 		
 	}
 
@@ -36,9 +38,9 @@ class Group : NSObject, NSCoding, Mappable{
     @objc required init(coder aDecoder: NSCoder)
 	{
          id = aDecoder.decodeObject(forKey: "id") as? String
-         menuItemCountByGroup = aDecoder.decodeObject(forKey: "menu_item_count_by_group") as? [MenuItemCountByGroup]
          name = aDecoder.decodeObject(forKey: "name") as? String
-         groups = aDecoder.decodeObject(forKey: "groups") as? [Group]
+         type = aDecoder.decodeObject(forKey: "type") as? String
+         viewOptions = aDecoder.decodeObject(forKey: "view_options") as? [ViewOption]
 
 	}
 
@@ -51,14 +53,14 @@ class Group : NSObject, NSCoding, Mappable{
 		if id != nil{
 			aCoder.encode(id, forKey: "id")
 		}
-		if menuItemCountByGroup != nil{
-			aCoder.encode(menuItemCountByGroup, forKey: "menu_item_count_by_group")
-		}
 		if name != nil{
 			aCoder.encode(name, forKey: "name")
 		}
-		if groups != nil{
-			aCoder.encode(groups, forKey: "groups")
+		if type != nil{
+			aCoder.encode(type, forKey: "type")
+		}
+		if viewOptions != nil{
+			aCoder.encode(viewOptions, forKey: "view_options")
 		}
 
 	}

@@ -1,6 +1,8 @@
 //
 //	MenuItemCountByGroup.swift
-//	Model file generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
+//  Created by Mehmet Zeytin on 29.02.2020.
+//  Copyright © 2020 Mehmet Zeytin. All rights reserved.
+//
 
 import Foundation 
 import ObjectMapper

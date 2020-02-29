@@ -1,29 +1,33 @@
 //
-//	MenuItemGroup.swift
-//	Model file generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
+//	Discount.swift
+//  Created by Mehmet Zeytin on 29.02.2020.
+//  Copyright © 2020 Mehmet Zeytin. All rights reserved.
+//
 
 import Foundation 
 import ObjectMapper
 
 
-class MenuItemGroup : NSObject, NSCoding, Mappable{
+class Discount : NSObject, NSCoding, Mappable{
 
-	var groups : [Group]?
 	var id : String?
 	var name : String?
+	var type : String?
+	var value : Int?
 
 
 	class func newInstance(map: Map) -> Mappable?{
-		return MenuItemGroup()
+		return Discount()
 	}
 	required init?(map: Map){}
 	private override init(){}
 
 	func mapping(map: Map)
 	{
-		groups <- map["groups"]
 		id <- map["id"]
 		name <- map["name"]
+		type <- map["type"]
+		value <- map["value"]
 		
 	}
 
@@ -33,9 +37,10 @@ class MenuItemGroup : NSObject, NSCoding, Mappable{
     */
     @objc required init(coder aDecoder: NSCoder)
 	{
-         groups = aDecoder.decodeObject(forKey: "groups") as? [Group]
          id = aDecoder.decodeObject(forKey: "id") as? String
          name = aDecoder.decodeObject(forKey: "name") as? String
+         type = aDecoder.decodeObject(forKey: "type") as? String
+         value = aDecoder.decodeObject(forKey: "value") as? Int
 
 	}
 
@@ -45,14 +50,17 @@ class MenuItemGroup : NSObject, NSCoding, Mappable{
     */
     @objc func encode(with aCoder: NSCoder)
 	{
-		if groups != nil{
-			aCoder.encode(groups, forKey: "groups")
-		}
 		if id != nil{
 			aCoder.encode(id, forKey: "id")
 		}
 		if name != nil{
 			aCoder.encode(name, forKey: "name")
+		}
+		if type != nil{
+			aCoder.encode(type, forKey: "type")
+		}
+		if value != nil{
+			aCoder.encode(value, forKey: "value")
 		}
 
 	}

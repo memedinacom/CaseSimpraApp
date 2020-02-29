@@ -1,5 +1,5 @@
 //
-//	Section.swift
+//	Group.swift
 //  Created by Mehmet Zeytin on 29.02.2020.
 //  Copyright © 2020 Mehmet Zeytin. All rights reserved.
 //
@@ -8,15 +8,16 @@ import Foundation
 import ObjectMapper
 
 
-class Section : NSObject, NSCoding, Mappable{
+class Group : NSObject, NSCoding, Mappable{
 
 	var id : String?
+	var menuItemCountByGroup : [MenuItemCountByGroup]?
 	var name : String?
-	var type : String?
+	var groups : [Group]?
 
 
 	class func newInstance(map: Map) -> Mappable?{
-		return Section()
+		return Group()
 	}
 	required init?(map: Map){}
 	private override init(){}
@@ -24,8 +25,9 @@ class Section : NSObject, NSCoding, Mappable{
 	func mapping(map: Map)
 	{
 		id <- map["id"]
+		menuItemCountByGroup <- map["menu_item_count_by_group"]
 		name <- map["name"]
-		type <- map["type"]
+		groups <- map["groups"]
 		
 	}
 
@@ -36,8 +38,9 @@ class Section : NSObject, NSCoding, Mappable{
     @objc required init(coder aDecoder: NSCoder)
 	{
          id = aDecoder.decodeObject(forKey: "id") as? String
+         menuItemCountByGroup = aDecoder.decodeObject(forKey: "menu_item_count_by_group") as? [MenuItemCountByGroup]
          name = aDecoder.decodeObject(forKey: "name") as? String
-         type = aDecoder.decodeObject(forKey: "type") as? String
+         groups = aDecoder.decodeObject(forKey: "groups") as? [Group]
 
 	}
 
@@ -50,11 +53,14 @@ class Section : NSObject, NSCoding, Mappable{
 		if id != nil{
 			aCoder.encode(id, forKey: "id")
 		}
+		if menuItemCountByGroup != nil{
+			aCoder.encode(menuItemCountByGroup, forKey: "menu_item_count_by_group")
+		}
 		if name != nil{
 			aCoder.encode(name, forKey: "name")
 		}
-		if type != nil{
-			aCoder.encode(type, forKey: "type")
+		if groups != nil{
+			aCoder.encode(groups, forKey: "groups")
 		}
 
 	}

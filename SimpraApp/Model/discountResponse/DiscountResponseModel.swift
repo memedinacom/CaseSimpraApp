@@ -1,5 +1,5 @@
 //
-//	SectionResponse.swift
+//	DiscountResponseModel.swift
 //  Created by Mehmet Zeytin on 29.02.2020.
 //  Copyright © 2020 Mehmet Zeytin. All rights reserved.
 //
@@ -8,20 +8,20 @@ import Foundation
 import ObjectMapper
 
 
-class SectionResponse : NSObject, NSCoding, Mappable{
+class DiscountResponseModel : NSObject, NSCoding, Mappable{
 
-	var sections : [Section]?
+	var discounts : [Discount]?
 
 
 	class func newInstance(map: Map) -> Mappable?{
-		return SectionResponse()
+		return DiscountResponseModel()
 	}
 	required init?(map: Map){}
 	private override init(){}
 
 	func mapping(map: Map)
 	{
-		sections <- map["sections"]
+		discounts <- map["discounts"]
 		
 	}
 
@@ -31,7 +31,7 @@ class SectionResponse : NSObject, NSCoding, Mappable{
     */
     @objc required init(coder aDecoder: NSCoder)
 	{
-         sections = aDecoder.decodeObject(forKey: "sections") as? [Section]
+         discounts = aDecoder.decodeObject(forKey: "discounts") as? [Discount]
 
 	}
 
@@ -41,8 +41,8 @@ class SectionResponse : NSObject, NSCoding, Mappable{
     */
     @objc func encode(with aCoder: NSCoder)
 	{
-		if sections != nil{
-			aCoder.encode(sections, forKey: "sections")
+		if discounts != nil{
+			aCoder.encode(discounts, forKey: "discounts")
 		}
 
 	}
