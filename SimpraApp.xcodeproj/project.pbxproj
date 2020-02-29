@@ -21,6 +21,10 @@
 		7A8CE565240B05D0000E5AD2 /* TablesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE557240B05D0000E5AD2 /* TablesResponseModel.swift */; };
 		7A8CE566240B05D0000E5AD2 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE559240B05D0000E5AD2 /* MenuItem.swift */; };
 		7A8CE568240B05D0000E5AD2 /* ProductResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE55B240B05D0000E5AD2 /* ProductResponseModel.swift */; };
+		7A8CE56E240B12B9000E5AD2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE56D240B12B9000E5AD2 /* LoginViewController.swift */; };
+		7A8CE570240B12F8000E5AD2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE56F240B12F8000E5AD2 /* BaseViewController.swift */; };
+		7A8CE573240B14D5000E5AD2 /* LoadingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE572240B14D5000E5AD2 /* LoadingHandler.swift */; };
+		7A8CE575240B151A000E5AD2 /* simpra-liquid-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A8CE574240B151A000E5AD2 /* simpra-liquid-loading.json */; };
 		7ACCA42E2409934300150248 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 7ACCA42D2409934300150248 /* default.realm */; };
 		7ACCA4322409A97900150248 /* cars.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ACCA4312409A97900150248 /* cars.json */; };
 		7ACCA4342409AF1600150248 /* ArrayTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4332409AF1600150248 /* ArrayTransform.swift */; };
@@ -56,6 +60,10 @@
 		7A8CE557240B05D0000E5AD2 /* TablesResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablesResponseModel.swift; sourceTree = "<group>"; };
 		7A8CE559240B05D0000E5AD2 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		7A8CE55B240B05D0000E5AD2 /* ProductResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductResponseModel.swift; sourceTree = "<group>"; };
+		7A8CE56D240B12B9000E5AD2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7A8CE56F240B12F8000E5AD2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7A8CE572240B14D5000E5AD2 /* LoadingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingHandler.swift; sourceTree = "<group>"; };
+		7A8CE574240B151A000E5AD2 /* simpra-liquid-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "simpra-liquid-loading.json"; sourceTree = "<group>"; };
 		7ACCA42D2409934300150248 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		7ACCA4312409A97900150248 /* cars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cars.json; sourceTree = "<group>"; };
 		7ACCA4332409AF1600150248 /* ArrayTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTransform.swift; sourceTree = "<group>"; };
@@ -159,6 +167,28 @@
 			path = ProductResponse;
 			sourceTree = "<group>";
 		};
+		7A8CE569240B1158000E5AD2 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		7A8CE56A240B1165000E5AD2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		7A8CE571240B14B4000E5AD2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7A8CE572240B14D5000E5AD2 /* LoadingHandler.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		7ACCA4362409EB1300150248 /* sectionResponse */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +230,10 @@
 		7AEFE48A2408301700688933 /* SimpraApp */ = {
 			isa = PBXGroup;
 			children = (
+				7A8CE574240B151A000E5AD2 /* simpra-liquid-loading.json */,
+				7A8CE571240B14B4000E5AD2 /* Protocol */,
+				7A8CE56A240B1165000E5AD2 /* Helper */,
+				7A8CE569240B1158000E5AD2 /* Component */,
 				7ACCA4312409A97900150248 /* cars.json */,
 				7ACCA42D2409934300150248 /* default.realm */,
 				7A878DB024085C9F00DA473B /* Enums.swift */,
@@ -214,6 +248,8 @@
 				7AEFE49A2408301900688933 /* Info.plist */,
 				7AEFE4922408301700688933 /* SimpraApp.xcdatamodeld */,
 				7ACCA4332409AF1600150248 /* ArrayTransform.swift */,
+				7A8CE56D240B12B9000E5AD2 /* LoginViewController.swift */,
+				7A8CE56F240B12F8000E5AD2 /* BaseViewController.swift */,
 			);
 			path = SimpraApp;
 			sourceTree = "<group>";
@@ -304,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AEFE4992408301900688933 /* LaunchScreen.storyboard in Resources */,
+				7A8CE575240B151A000E5AD2 /* simpra-liquid-loading.json in Resources */,
 				7AEFE4962408301900688933 /* Assets.xcassets in Resources */,
 				7ACCA4322409A97900150248 /* cars.json in Resources */,
 				7ACCA42E2409934300150248 /* default.realm in Resources */,
@@ -365,6 +402,7 @@
 				7A8CE561240B05D0000E5AD2 /* ActionResponseModel.swift in Sources */,
 				7ACCA4342409AF1600150248 /* ArrayTransform.swift in Sources */,
 				7AEFE4A22408315E00688933 /* NetworkManager.swift in Sources */,
+				7A8CE570240B12F8000E5AD2 /* BaseViewController.swift in Sources */,
 				7ACCA44B2409EC7F00150248 /* Group.swift in Sources */,
 				7AEFE48E2408301700688933 /* ViewController.swift in Sources */,
 				7A8CE562240B05D0000E5AD2 /* TenderMedia.swift in Sources */,
@@ -378,12 +416,14 @@
 				7A8CE55C240B05D0000E5AD2 /* EmployeesResponseModel.swift in Sources */,
 				7A8CE55D240B05D0000E5AD2 /* Employee.swift in Sources */,
 				7AEFE48C2408301700688933 /* AppDelegate.swift in Sources */,
+				7A8CE573240B14D5000E5AD2 /* LoadingHandler.swift in Sources */,
 				7ACCA4442409EC3300150248 /* SectionResponse.swift in Sources */,
 				7A878DB124085C9F00DA473B /* Enums.swift in Sources */,
 				7A878DA824085A9200DA473B /* SimpraDB.swift in Sources */,
 				7AEFE4942408301700688933 /* SimpraApp.xcdatamodeld in Sources */,
 				7ACCA44D2409EC7F00150248 /* MenuItemGroup.swift in Sources */,
 				7A8CE560240B05D0000E5AD2 /* ViewOption.swift in Sources */,
+				7A8CE56E240B12B9000E5AD2 /* LoginViewController.swift in Sources */,
 				7A8CE565240B05D0000E5AD2 /* TablesResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
