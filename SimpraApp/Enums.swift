@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+
+// MARK: - Section TYPE
+enum sectionType:String {
+    case fastFood = "Fastfood"
+    case restoran = "dine_in"
+}
+

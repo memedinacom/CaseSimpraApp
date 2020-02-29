@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "RootClass.mapping(map:):RootClass.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in SimpraDB.saveSection(_:):SimpraDB.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in ViewController.viewDidLoad():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in ViewController.viewDidLoad():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response?.menuItemGroups[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SectionResponseModel.mapping(map:):SectionResponseModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SimpraApi.getCars&lt;A&gt;(type:success:fail:):NetworkManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in SimpraApiType.fetch():NetworkManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SectionResponse.mapping(map:):SectionResponse.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "menuItemGroups">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in SimpraApi.getCars&lt;A&gt;(type:success:fail:):NetworkManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in SimpraApiType.fetchs&lt;A&gt;(type:completion:):NetworkManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "d">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in SimpraApi.fetchs&lt;A&gt;(type:completion:):NetworkManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad():ViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

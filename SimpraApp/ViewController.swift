@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import Realm
+import RealmSwift
+
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        SimpraApi.groups.fetchs(type: GroupsResponseModel.self) { (response, error) in
+            
+        }
+    
+       
+        
     }
 
 

@@ -3,19 +3,46 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A878DA824085A9200DA473B /* SimpraDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A878DA724085A9200DA473B /* SimpraDB.swift */; };
+		7A878DB124085C9F00DA473B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A878DB024085C9F00DA473B /* Enums.swift */; };
+		7ACCA42E2409934300150248 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 7ACCA42D2409934300150248 /* default.realm */; };
+		7ACCA4322409A97900150248 /* cars.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ACCA4312409A97900150248 /* cars.json */; };
+		7ACCA4342409AF1600150248 /* ArrayTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4332409AF1600150248 /* ArrayTransform.swift */; };
+		7ACCA4442409EC3300150248 /* SectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4422409EC3300150248 /* SectionResponse.swift */; };
+		7ACCA4452409EC3300150248 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4432409EC3300150248 /* Section.swift */; };
+		7ACCA44B2409EC7F00150248 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4472409EC7E00150248 /* Group.swift */; };
+		7ACCA44C2409EC7F00150248 /* MenuItemCountByGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4482409EC7E00150248 /* MenuItemCountByGroup.swift */; };
+		7ACCA44D2409EC7F00150248 /* MenuItemGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4492409EC7E00150248 /* MenuItemGroup.swift */; };
+		7ACCA44E2409EC7F00150248 /* GroupsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA44A2409EC7E00150248 /* GroupsResponseModel.swift */; };
+		7ACCA4502409ED0500150248 /* StoreGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA44F2409ED0500150248 /* StoreGroupModel.swift */; };
 		7AEFE48C2408301700688933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFE48B2408301700688933 /* AppDelegate.swift */; };
 		7AEFE48E2408301700688933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFE48D2408301700688933 /* ViewController.swift */; };
 		7AEFE4912408301700688933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AEFE48F2408301700688933 /* Main.storyboard */; };
 		7AEFE4942408301700688933 /* SimpraApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFE4922408301700688933 /* SimpraApp.xcdatamodeld */; };
 		7AEFE4962408301900688933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AEFE4952408301900688933 /* Assets.xcassets */; };
 		7AEFE4992408301900688933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AEFE4972408301900688933 /* LaunchScreen.storyboard */; };
+		7AEFE4A22408315E00688933 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFE4A12408315E00688933 /* NetworkManager.swift */; };
+		ACE7A40809FA07BE197BA749 /* Pods_SimpraApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA8209A2293C8F33E394472 /* Pods_SimpraApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73117C4B9D6894E6EB8DDFA3 /* Pods-SimpraApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpraApp.debug.xcconfig"; path = "Target Support Files/Pods-SimpraApp/Pods-SimpraApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7A878DA724085A9200DA473B /* SimpraDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpraDB.swift; sourceTree = "<group>"; };
+		7A878DB024085C9F00DA473B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		7ACCA42D2409934300150248 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		7ACCA4312409A97900150248 /* cars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cars.json; sourceTree = "<group>"; };
+		7ACCA4332409AF1600150248 /* ArrayTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTransform.swift; sourceTree = "<group>"; };
+		7ACCA4422409EC3300150248 /* SectionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionResponse.swift; sourceTree = "<group>"; };
+		7ACCA4432409EC3300150248 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		7ACCA4472409EC7E00150248 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		7ACCA4482409EC7E00150248 /* MenuItemCountByGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCountByGroup.swift; sourceTree = "<group>"; };
+		7ACCA4492409EC7E00150248 /* MenuItemGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemGroup.swift; sourceTree = "<group>"; };
+		7ACCA44A2409EC7E00150248 /* GroupsResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsResponseModel.swift; sourceTree = "<group>"; };
+		7ACCA44F2409ED0500150248 /* StoreGroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreGroupModel.swift; sourceTree = "<group>"; };
 		7AEFE4882408301700688933 /* SimpraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AEFE48B2408301700688933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AEFE48D2408301700688933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +51,9 @@
 		7AEFE4952408301900688933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AEFE4982408301900688933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AEFE49A2408301900688933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AEFE4A12408315E00688933 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7BA8209A2293C8F33E394472 /* Pods_SimpraApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpraApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F6FD1355C58E4D6CE2ADD9 /* Pods-SimpraApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpraApp.release.xcconfig"; path = "Target Support Files/Pods-SimpraApp/Pods-SimpraApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +61,98 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE7A40809FA07BE197BA749 /* Pods_SimpraApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A878D982408378C00DA473B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7ACCA4462409EC7400150248 /* GroupdResponse */,
+				7ACCA4472409EC7E00150248 /* Group.swift */,
+				7ACCA44A2409EC7E00150248 /* GroupsResponseModel.swift */,
+				7ACCA4482409EC7E00150248 /* MenuItemCountByGroup.swift */,
+				7ACCA4492409EC7E00150248 /* MenuItemGroup.swift */,
+				7ACCA43A2409EB3300150248 /* actionResponseMdel */,
+				7ACCA4392409EB2C00150248 /* discountResponseModel */,
+				7ACCA4382409EB1E00150248 /* productResponseModel */,
+				7ACCA4372409EB1900150248 /* tableResponseModel */,
+				7ACCA4362409EB1300150248 /* sectionResponse */,
+				7ACCA4352409EB0B00150248 /* employeesResponseModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7A878DA624085A6500DA473B /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				7A878DA724085A9200DA473B /* SimpraDB.swift */,
+				7ACCA44F2409ED0500150248 /* StoreGroupModel.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		7ACCA4352409EB0B00150248 /* employeesResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = employeesResponseModel;
+			sourceTree = "<group>";
+		};
+		7ACCA4362409EB1300150248 /* sectionResponse */ = {
+			isa = PBXGroup;
+			children = (
+				7ACCA4432409EC3300150248 /* Section.swift */,
+				7ACCA4422409EC3300150248 /* SectionResponse.swift */,
+			);
+			path = sectionResponse;
+			sourceTree = "<group>";
+		};
+		7ACCA4372409EB1900150248 /* tableResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tableResponseModel;
+			sourceTree = "<group>";
+		};
+		7ACCA4382409EB1E00150248 /* productResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = productResponseModel;
+			sourceTree = "<group>";
+		};
+		7ACCA4392409EB2C00150248 /* discountResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = discountResponseModel;
+			sourceTree = "<group>";
+		};
+		7ACCA43A2409EB3300150248 /* actionResponseMdel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = actionResponseMdel;
+			sourceTree = "<group>";
+		};
+		7ACCA4462409EC7400150248 /* GroupdResponse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GroupdResponse;
+			sourceTree = "<group>";
+		};
 		7AEFE47F2408301700688933 = {
 			isa = PBXGroup;
 			children = (
 				7AEFE48A2408301700688933 /* SimpraApp */,
 				7AEFE4892408301700688933 /* Products */,
+				DD521074B2E40655818A04A5 /* Pods */,
+				E345F99D7532FE1781F468D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +167,12 @@
 		7AEFE48A2408301700688933 /* SimpraApp */ = {
 			isa = PBXGroup;
 			children = (
+				7ACCA4312409A97900150248 /* cars.json */,
+				7ACCA42D2409934300150248 /* default.realm */,
+				7A878DB024085C9F00DA473B /* Enums.swift */,
+				7A878DA624085A6500DA473B /* Realm */,
+				7A878D982408378C00DA473B /* Model */,
+				7AEFE4A02408314500688933 /* Network */,
 				7AEFE48B2408301700688933 /* AppDelegate.swift */,
 				7AEFE48D2408301700688933 /* ViewController.swift */,
 				7AEFE48F2408301700688933 /* Main.storyboard */,
@@ -63,8 +180,34 @@
 				7AEFE4972408301900688933 /* LaunchScreen.storyboard */,
 				7AEFE49A2408301900688933 /* Info.plist */,
 				7AEFE4922408301700688933 /* SimpraApp.xcdatamodeld */,
+				7ACCA4332409AF1600150248 /* ArrayTransform.swift */,
 			);
 			path = SimpraApp;
+			sourceTree = "<group>";
+		};
+		7AEFE4A02408314500688933 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7AEFE4A12408315E00688933 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DD521074B2E40655818A04A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73117C4B9D6894E6EB8DDFA3 /* Pods-SimpraApp.debug.xcconfig */,
+				D4F6FD1355C58E4D6CE2ADD9 /* Pods-SimpraApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E345F99D7532FE1781F468D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BA8209A2293C8F33E394472 /* Pods_SimpraApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AEFE49D2408301900688933 /* Build configuration list for PBXNativeTarget "SimpraApp" */;
 			buildPhases = (
+				7382BC05C879B9BF76F37201 /* [CP] Check Pods Manifest.lock */,
 				7AEFE4842408301700688933 /* Sources */,
 				7AEFE4852408301700688933 /* Frameworks */,
 				7AEFE4862408301700688933 /* Resources */,
+				B89BEAF51310E56C50EDA1BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,20 +272,75 @@
 			files = (
 				7AEFE4992408301900688933 /* LaunchScreen.storyboard in Resources */,
 				7AEFE4962408301900688933 /* Assets.xcassets in Resources */,
+				7ACCA4322409A97900150248 /* cars.json in Resources */,
+				7ACCA42E2409934300150248 /* default.realm in Resources */,
 				7AEFE4912408301700688933 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7382BC05C879B9BF76F37201 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpraApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B89BEAF51310E56C50EDA1BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpraApp/Pods-SimpraApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpraApp/Pods-SimpraApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpraApp/Pods-SimpraApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7AEFE4842408301700688933 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ACCA4452409EC3300150248 /* Section.swift in Sources */,
+				7ACCA4342409AF1600150248 /* ArrayTransform.swift in Sources */,
+				7AEFE4A22408315E00688933 /* NetworkManager.swift in Sources */,
+				7ACCA44B2409EC7F00150248 /* Group.swift in Sources */,
 				7AEFE48E2408301700688933 /* ViewController.swift in Sources */,
+				7ACCA4502409ED0500150248 /* StoreGroupModel.swift in Sources */,
+				7ACCA44C2409EC7F00150248 /* MenuItemCountByGroup.swift in Sources */,
+				7ACCA44E2409EC7F00150248 /* GroupsResponseModel.swift in Sources */,
 				7AEFE48C2408301700688933 /* AppDelegate.swift in Sources */,
+				7ACCA4442409EC3300150248 /* SectionResponse.swift in Sources */,
+				7A878DB124085C9F00DA473B /* Enums.swift in Sources */,
+				7A878DA824085A9200DA473B /* SimpraDB.swift in Sources */,
 				7AEFE4942408301700688933 /* SimpraApp.xcdatamodeld in Sources */,
+				7ACCA44D2409EC7F00150248 /* MenuItemGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +484,7 @@
 		};
 		7AEFE49E2408301900688933 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73117C4B9D6894E6EB8DDFA3 /* Pods-SimpraApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +503,7 @@
 		};
 		7AEFE49F2408301900688933 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F6FD1355C58E4D6CE2ADD9 /* Pods-SimpraApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
