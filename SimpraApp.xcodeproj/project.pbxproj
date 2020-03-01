@@ -13,6 +13,7 @@
 		7A42F2E1240B25D7009B94A2 /* StoryBoardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2E0240B25D7009B94A2 /* StoryBoardable.swift */; };
 		7A42F2E3240B2D06009B94A2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2E2240B2D06009B94A2 /* DataManager.swift */; };
 		7A42F2E5240B31FA009B94A2 /* RestoranViewController+Navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2E4240B31FA009B94A2 /* RestoranViewController+Navbar.swift */; };
+		7A42F2E7240BC914009B94A2 /* SimpraLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2E6240BC914009B94A2 /* SimpraLabel.swift */; };
 		7A878DA824085A9200DA473B /* SimpraDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A878DA724085A9200DA473B /* SimpraDB.swift */; };
 		7A878DB124085C9F00DA473B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A878DB024085C9F00DA473B /* Enums.swift */; };
 		7A8CE55C240B05D0000E5AD2 /* EmployeesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE54B240B05D0000E5AD2 /* EmployeesResponseModel.swift */; };
@@ -67,6 +68,7 @@
 		7A42F2E0240B25D7009B94A2 /* StoryBoardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardable.swift; sourceTree = "<group>"; };
 		7A42F2E2240B2D06009B94A2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7A42F2E4240B31FA009B94A2 /* RestoranViewController+Navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestoranViewController+Navbar.swift"; sourceTree = "<group>"; };
+		7A42F2E6240BC914009B94A2 /* SimpraLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpraLabel.swift; sourceTree = "<group>"; };
 		7A878DA724085A9200DA473B /* SimpraDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpraDB.swift; sourceTree = "<group>"; };
 		7A878DB024085C9F00DA473B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		7A8CE54B240B05D0000E5AD2 /* EmployeesResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesResponseModel.swift; sourceTree = "<group>"; };
@@ -253,9 +255,10 @@
 		7A8CE57B240B1B4D000E5AD2 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				7A8CE583240B1E8B000E5AD2 /* New Group */,
+				7A8CE583240B1E8B000E5AD2 /* ProductCell */,
 				7A8CE57C240B1B72000E5AD2 /* BaseRoundedTextFied.swift */,
 				7A8CE584240B1E9C000E5AD2 /* RoundedButton.swift */,
+				7A42F2E6240BC914009B94A2 /* SimpraLabel.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -272,11 +275,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		7A8CE583240B1E8B000E5AD2 /* New Group */ = {
+		7A8CE583240B1E8B000E5AD2 /* ProductCell */ = {
 			isa = PBXGroup;
 			children = (
+				7A37BCBE240B46EC005AA776 /* ProductPreviewCell.swift */,
+				7A37BCBF240B46ED005AA776 /* ProductPreviewCell.xib */,
 			);
-			path = "New Group";
+			path = ProductCell;
 			sourceTree = "<group>";
 		};
 		7A8CE586240B22EE000E5AD2 /* Launch */ = {
@@ -329,8 +334,6 @@
 		7AEFE48A2408301700688933 /* SimpraApp */ = {
 			isa = PBXGroup;
 			children = (
-				7A37BCBE240B46EC005AA776 /* ProductPreviewCell.swift */,
-				7A37BCBF240B46ED005AA776 /* ProductPreviewCell.xib */,
 				7A8CE57E240B1BB6000E5AD2 /* Extensions */,
 				7A8CE57A240B1A53000E5AD2 /* Controller */,
 				7A8CE576240B1996000E5AD2 /* StoryBoard */,
@@ -525,6 +528,7 @@
 				7A8CE58C240B245F000E5AD2 /* StoryBoard.swift in Sources */,
 				7A8CE582240B1C29000E5AD2 /* UIFont.swift in Sources */,
 				7A8CE566240B05D0000E5AD2 /* MenuItem.swift in Sources */,
+				7A42F2E7240BC914009B94A2 /* SimpraLabel.swift in Sources */,
 				7A8CE568240B05D0000E5AD2 /* ProductResponseModel.swift in Sources */,
 				7A8CE55C240B05D0000E5AD2 /* EmployeesResponseModel.swift in Sources */,
 				7A8CE55D240B05D0000E5AD2 /* Employee.swift in Sources */,

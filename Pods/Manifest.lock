@@ -3,6 +3,15 @@ PODS:
   - AlamofireObjectMapper (5.2.1):
     - Alamofire (~> 4.7)
     - ObjectMapper (~> 3.4)
+  - CELLULAR/Locking (4.1.0)
+  - CELLULAR/Result (4.1.0)
+  - CellularLocalStorage (4.2.0):
+    - CellularLocalStorage/Core (= 4.2.0)
+  - CellularLocalStorage/Core (4.2.0):
+    - CELLULAR/Locking (~> 4.1.0)
+    - CELLULAR/Result (~> 4.1.0)
+  - IQKeyboardManagerSwift (6.5.5)
+  - lottie-ios (3.1.6)
   - ObjectMapper (3.5.1)
   - Realm (4.3.2):
     - Realm/Headers (= 4.3.2)
@@ -14,6 +23,9 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - AlamofireObjectMapper
+  - CellularLocalStorage
+  - IQKeyboardManagerSwift
+  - lottie-ios
   - ObjectMapper
   - RealmSwift (~> 4.3.2)
   - SwiftyJSON
@@ -22,6 +34,10 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireObjectMapper
+    - CELLULAR
+    - CellularLocalStorage
+    - IQKeyboardManagerSwift
+    - lottie-ios
     - ObjectMapper
     - Realm
     - RealmSwift
@@ -30,11 +46,15 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  CELLULAR: 6af608774a6d7fed3a77b998aac37e5c6750beec
+  CellularLocalStorage: a602d529be743e482d7eba48b8ed4f9d9d94ae3d
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   Realm: 5e92902e2875dff4bb0fd02f67bb737c3d5db2bc
   RealmSwift: 9a360fc7bae04fc2e308a34fbd899d5faa2d6b22
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: e833dbea123b0c597222c80606bf539a06db270b
+PODFILE CHECKSUM: 6d05ed23189cc12669f676f93f4774f05686289d
 
 COCOAPODS: 1.8.4

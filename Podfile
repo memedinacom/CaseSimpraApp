@@ -11,5 +11,7 @@ pod 'ObjectMapper'
 pod 'RealmSwift', '~> 4.3.2'
 pod 'SwiftyJSON'
 pod 'AlamofireObjectMapper'
-
+pod "CellularLocalStorage"
+pod 'lottie-ios'
+pod 'IQKeyboardManagerSwift'
 end
