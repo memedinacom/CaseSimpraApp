@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A37BCBD240B3880005AA776 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A37BCBC240B3880005AA776 /* UIView.swift */; };
+		7A37BCC0240B46ED005AA776 /* ProductPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A37BCBE240B46EC005AA776 /* ProductPreviewCell.swift */; };
+		7A37BCC1240B46ED005AA776 /* ProductPreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A37BCBF240B46ED005AA776 /* ProductPreviewCell.xib */; };
+		7A42F2E1240B25D7009B94A2 /* StoryBoardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2E0240B25D7009B94A2 /* StoryBoardable.swift */; };
+		7A42F2E3240B2D06009B94A2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2E2240B2D06009B94A2 /* DataManager.swift */; };
+		7A42F2E5240B31FA009B94A2 /* RestoranViewController+Navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2E4240B31FA009B94A2 /* RestoranViewController+Navbar.swift */; };
 		7A878DA824085A9200DA473B /* SimpraDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A878DA724085A9200DA473B /* SimpraDB.swift */; };
 		7A878DB124085C9F00DA473B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A878DB024085C9F00DA473B /* Enums.swift */; };
 		7A8CE55C240B05D0000E5AD2 /* EmployeesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE54B240B05D0000E5AD2 /* EmployeesResponseModel.swift */; };
@@ -25,6 +31,15 @@
 		7A8CE570240B12F8000E5AD2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE56F240B12F8000E5AD2 /* BaseViewController.swift */; };
 		7A8CE573240B14D5000E5AD2 /* LoadingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE572240B14D5000E5AD2 /* LoadingHandler.swift */; };
 		7A8CE575240B151A000E5AD2 /* simpra-liquid-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A8CE574240B151A000E5AD2 /* simpra-liquid-loading.json */; };
+		7A8CE579240B19EE000E5AD2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8CE578240B19EE000E5AD2 /* Login.storyboard */; };
+		7A8CE57D240B1B72000E5AD2 /* BaseRoundedTextFied.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE57C240B1B72000E5AD2 /* BaseRoundedTextFied.swift */; };
+		7A8CE580240B1BCB000E5AD2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE57F240B1BCA000E5AD2 /* UIColor.swift */; };
+		7A8CE582240B1C29000E5AD2 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE581240B1C29000E5AD2 /* UIFont.swift */; };
+		7A8CE585240B1E9C000E5AD2 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE584240B1E9C000E5AD2 /* RoundedButton.swift */; };
+		7A8CE589240B2365000E5AD2 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8CE587240B2364000E5AD2 /* SplashScreen.storyboard */; };
+		7A8CE58A240B2365000E5AD2 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE588240B2365000E5AD2 /* SplashScreenViewController.swift */; };
+		7A8CE58C240B245F000E5AD2 /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE58B240B245F000E5AD2 /* StoryBoard.swift */; };
+		7A8CE58E240B2527000E5AD2 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE58D240B2527000E5AD2 /* UIViewController.swift */; };
 		7ACCA42E2409934300150248 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 7ACCA42D2409934300150248 /* default.realm */; };
 		7ACCA4322409A97900150248 /* cars.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ACCA4312409A97900150248 /* cars.json */; };
 		7ACCA4342409AF1600150248 /* ArrayTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4332409AF1600150248 /* ArrayTransform.swift */; };
@@ -35,7 +50,7 @@
 		7ACCA44D2409EC7F00150248 /* MenuItemGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4492409EC7E00150248 /* MenuItemGroup.swift */; };
 		7ACCA44E2409EC7F00150248 /* GroupsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA44A2409EC7E00150248 /* GroupsResponseModel.swift */; };
 		7AEFE48C2408301700688933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFE48B2408301700688933 /* AppDelegate.swift */; };
-		7AEFE48E2408301700688933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFE48D2408301700688933 /* ViewController.swift */; };
+		7AEFE48E2408301700688933 /* RestoranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFE48D2408301700688933 /* RestoranViewController.swift */; };
 		7AEFE4912408301700688933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AEFE48F2408301700688933 /* Main.storyboard */; };
 		7AEFE4942408301700688933 /* SimpraApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFE4922408301700688933 /* SimpraApp.xcdatamodeld */; };
 		7AEFE4962408301900688933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AEFE4952408301900688933 /* Assets.xcassets */; };
@@ -46,6 +61,12 @@
 
 /* Begin PBXFileReference section */
 		73117C4B9D6894E6EB8DDFA3 /* Pods-SimpraApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpraApp.debug.xcconfig"; path = "Target Support Files/Pods-SimpraApp/Pods-SimpraApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7A37BCBC240B3880005AA776 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		7A37BCBE240B46EC005AA776 /* ProductPreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductPreviewCell.swift; sourceTree = "<group>"; };
+		7A37BCBF240B46ED005AA776 /* ProductPreviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductPreviewCell.xib; sourceTree = "<group>"; };
+		7A42F2E0240B25D7009B94A2 /* StoryBoardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardable.swift; sourceTree = "<group>"; };
+		7A42F2E2240B2D06009B94A2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		7A42F2E4240B31FA009B94A2 /* RestoranViewController+Navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestoranViewController+Navbar.swift"; sourceTree = "<group>"; };
 		7A878DA724085A9200DA473B /* SimpraDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpraDB.swift; sourceTree = "<group>"; };
 		7A878DB024085C9F00DA473B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		7A8CE54B240B05D0000E5AD2 /* EmployeesResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesResponseModel.swift; sourceTree = "<group>"; };
@@ -64,6 +85,15 @@
 		7A8CE56F240B12F8000E5AD2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7A8CE572240B14D5000E5AD2 /* LoadingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingHandler.swift; sourceTree = "<group>"; };
 		7A8CE574240B151A000E5AD2 /* simpra-liquid-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "simpra-liquid-loading.json"; sourceTree = "<group>"; };
+		7A8CE578240B19EE000E5AD2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		7A8CE57C240B1B72000E5AD2 /* BaseRoundedTextFied.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRoundedTextFied.swift; sourceTree = "<group>"; };
+		7A8CE57F240B1BCA000E5AD2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		7A8CE581240B1C29000E5AD2 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		7A8CE584240B1E9C000E5AD2 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		7A8CE587240B2364000E5AD2 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		7A8CE588240B2365000E5AD2 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		7A8CE58B240B245F000E5AD2 /* StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
+		7A8CE58D240B2527000E5AD2 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		7ACCA42D2409934300150248 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		7ACCA4312409A97900150248 /* cars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cars.json; sourceTree = "<group>"; };
 		7ACCA4332409AF1600150248 /* ArrayTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTransform.swift; sourceTree = "<group>"; };
@@ -75,7 +105,7 @@
 		7ACCA44A2409EC7E00150248 /* GroupsResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsResponseModel.swift; sourceTree = "<group>"; };
 		7AEFE4882408301700688933 /* SimpraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AEFE48B2408301700688933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7AEFE48D2408301700688933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7AEFE48D2408301700688933 /* RestoranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoranViewController.swift; sourceTree = "<group>"; };
 		7AEFE4902408301700688933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AEFE4932408301700688933 /* SimpraApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpraApp.xcdatamodel; sourceTree = "<group>"; };
 		7AEFE4952408301900688933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -170,6 +200,8 @@
 		7A8CE569240B1158000E5AD2 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				7A8CE57B240B1B4D000E5AD2 /* views */,
+				7A8CE56F240B12F8000E5AD2 /* BaseViewController.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -177,6 +209,7 @@
 		7A8CE56A240B1165000E5AD2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				7A42F2E2240B2D06009B94A2 /* DataManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -185,8 +218,74 @@
 			isa = PBXGroup;
 			children = (
 				7A8CE572240B14D5000E5AD2 /* LoadingHandler.swift */,
+				7A42F2E0240B25D7009B94A2 /* StoryBoardable.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7A8CE576240B1996000E5AD2 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7A8CE586240B22EE000E5AD2 /* Launch */,
+				7A8CE577240B19A2000E5AD2 /* Login */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		7A8CE577240B19A2000E5AD2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7A8CE578240B19EE000E5AD2 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7A8CE57A240B1A53000E5AD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7A8CE56D240B12B9000E5AD2 /* LoginViewController.swift */,
+				7AEFE48D2408301700688933 /* RestoranViewController.swift */,
+				7A42F2E4240B31FA009B94A2 /* RestoranViewController+Navbar.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7A8CE57B240B1B4D000E5AD2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7A8CE583240B1E8B000E5AD2 /* New Group */,
+				7A8CE57C240B1B72000E5AD2 /* BaseRoundedTextFied.swift */,
+				7A8CE584240B1E9C000E5AD2 /* RoundedButton.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		7A8CE57E240B1BB6000E5AD2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7A8CE57F240B1BCA000E5AD2 /* UIColor.swift */,
+				7A8CE581240B1C29000E5AD2 /* UIFont.swift */,
+				7A8CE58B240B245F000E5AD2 /* StoryBoard.swift */,
+				7A8CE58D240B2527000E5AD2 /* UIViewController.swift */,
+				7A37BCBC240B3880005AA776 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7A8CE583240B1E8B000E5AD2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		7A8CE586240B22EE000E5AD2 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				7A8CE587240B2364000E5AD2 /* SplashScreen.storyboard */,
+				7A8CE588240B2365000E5AD2 /* SplashScreenViewController.swift */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 		7ACCA4362409EB1300150248 /* sectionResponse */ = {
@@ -230,6 +329,11 @@
 		7AEFE48A2408301700688933 /* SimpraApp */ = {
 			isa = PBXGroup;
 			children = (
+				7A37BCBE240B46EC005AA776 /* ProductPreviewCell.swift */,
+				7A37BCBF240B46ED005AA776 /* ProductPreviewCell.xib */,
+				7A8CE57E240B1BB6000E5AD2 /* Extensions */,
+				7A8CE57A240B1A53000E5AD2 /* Controller */,
+				7A8CE576240B1996000E5AD2 /* StoryBoard */,
 				7A8CE574240B151A000E5AD2 /* simpra-liquid-loading.json */,
 				7A8CE571240B14B4000E5AD2 /* Protocol */,
 				7A8CE56A240B1165000E5AD2 /* Helper */,
@@ -241,15 +345,12 @@
 				7A878D982408378C00DA473B /* Model */,
 				7AEFE4A02408314500688933 /* Network */,
 				7AEFE48B2408301700688933 /* AppDelegate.swift */,
-				7AEFE48D2408301700688933 /* ViewController.swift */,
 				7AEFE48F2408301700688933 /* Main.storyboard */,
 				7AEFE4952408301900688933 /* Assets.xcassets */,
 				7AEFE4972408301900688933 /* LaunchScreen.storyboard */,
 				7AEFE49A2408301900688933 /* Info.plist */,
 				7AEFE4922408301700688933 /* SimpraApp.xcdatamodeld */,
 				7ACCA4332409AF1600150248 /* ArrayTransform.swift */,
-				7A8CE56D240B12B9000E5AD2 /* LoginViewController.swift */,
-				7A8CE56F240B12F8000E5AD2 /* BaseViewController.swift */,
 			);
 			path = SimpraApp;
 			sourceTree = "<group>";
@@ -340,10 +441,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AEFE4992408301900688933 /* LaunchScreen.storyboard in Resources */,
+				7A8CE589240B2365000E5AD2 /* SplashScreen.storyboard in Resources */,
 				7A8CE575240B151A000E5AD2 /* simpra-liquid-loading.json in Resources */,
 				7AEFE4962408301900688933 /* Assets.xcassets in Resources */,
 				7ACCA4322409A97900150248 /* cars.json in Resources */,
 				7ACCA42E2409934300150248 /* default.realm in Resources */,
+				7A37BCC1240B46ED005AA776 /* ProductPreviewCell.xib in Resources */,
+				7A8CE579240B19EE000E5AD2 /* Login.storyboard in Resources */,
 				7AEFE4912408301700688933 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,28 +503,40 @@
 			files = (
 				7A8CE55E240B05D0000E5AD2 /* Discount.swift in Sources */,
 				7ACCA4452409EC3300150248 /* Section.swift in Sources */,
+				7A42F2E5240B31FA009B94A2 /* RestoranViewController+Navbar.swift in Sources */,
 				7A8CE561240B05D0000E5AD2 /* ActionResponseModel.swift in Sources */,
 				7ACCA4342409AF1600150248 /* ArrayTransform.swift in Sources */,
 				7AEFE4A22408315E00688933 /* NetworkManager.swift in Sources */,
+				7A8CE58A240B2365000E5AD2 /* SplashScreenViewController.swift in Sources */,
 				7A8CE570240B12F8000E5AD2 /* BaseViewController.swift in Sources */,
+				7A37BCC0240B46ED005AA776 /* ProductPreviewCell.swift in Sources */,
 				7ACCA44B2409EC7F00150248 /* Group.swift in Sources */,
-				7AEFE48E2408301700688933 /* ViewController.swift in Sources */,
+				7AEFE48E2408301700688933 /* RestoranViewController.swift in Sources */,
 				7A8CE562240B05D0000E5AD2 /* TenderMedia.swift in Sources */,
 				7ACCA44C2409EC7F00150248 /* MenuItemCountByGroup.swift in Sources */,
 				7A8CE564240B05D0000E5AD2 /* RevenueCenter.swift in Sources */,
+				7A37BCBD240B3880005AA776 /* UIView.swift in Sources */,
+				7A8CE57D240B1B72000E5AD2 /* BaseRoundedTextFied.swift in Sources */,
 				7A8CE563240B05D0000E5AD2 /* Table.swift in Sources */,
+				7A8CE58E240B2527000E5AD2 /* UIViewController.swift in Sources */,
 				7ACCA44E2409EC7F00150248 /* GroupsResponseModel.swift in Sources */,
+				7A42F2E1240B25D7009B94A2 /* StoryBoardable.swift in Sources */,
 				7A8CE55F240B05D0000E5AD2 /* DiscountResponseModel.swift in Sources */,
+				7A8CE58C240B245F000E5AD2 /* StoryBoard.swift in Sources */,
+				7A8CE582240B1C29000E5AD2 /* UIFont.swift in Sources */,
 				7A8CE566240B05D0000E5AD2 /* MenuItem.swift in Sources */,
 				7A8CE568240B05D0000E5AD2 /* ProductResponseModel.swift in Sources */,
 				7A8CE55C240B05D0000E5AD2 /* EmployeesResponseModel.swift in Sources */,
 				7A8CE55D240B05D0000E5AD2 /* Employee.swift in Sources */,
+				7A8CE580240B1BCB000E5AD2 /* UIColor.swift in Sources */,
 				7AEFE48C2408301700688933 /* AppDelegate.swift in Sources */,
 				7A8CE573240B14D5000E5AD2 /* LoadingHandler.swift in Sources */,
+				7A42F2E3240B2D06009B94A2 /* DataManager.swift in Sources */,
 				7ACCA4442409EC3300150248 /* SectionResponse.swift in Sources */,
 				7A878DB124085C9F00DA473B /* Enums.swift in Sources */,
 				7A878DA824085A9200DA473B /* SimpraDB.swift in Sources */,
 				7AEFE4942408301700688933 /* SimpraApp.xcdatamodeld in Sources */,
+				7A8CE585240B1E9C000E5AD2 /* RoundedButton.swift in Sources */,
 				7ACCA44D2409EC7F00150248 /* MenuItemGroup.swift in Sources */,
 				7A8CE560240B05D0000E5AD2 /* ViewOption.swift in Sources */,
 				7A8CE56E240B12B9000E5AD2 /* LoginViewController.swift in Sources */,
