@@ -9,6 +9,9 @@
 import UIKit
 import CoreData
 import RealmSwift
+import IQKeyboardManagerSwift
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,27 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let config = Realm.Configuration(
-            // Set the new schema version. This must be greater than the previously used
-            // version (if you've never set a schema version before, the version is 0).
-            schemaVersion: 1
-
-        )
-
-        // Tell Realm to use this new configuration object for the default Realm
-        Realm.Configuration.defaultConfiguration = config
-
-        // Now that we've told Realm how to handle the schema change, opening the file
-        // will automatically perform the migration
-        do {
-            _ = try Realm()
-        } catch let _ as NSError {
-            // print error
-        }
-
+        self.keyboardManagerSetSetting()
 
         
         return true
+    }
+    
+    
+    // MARK: - KeyboardManagerSetSetting
+    func keyboardManagerSetSetting(){
+        IQKeyboardManager.shared.enable = true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

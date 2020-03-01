@@ -88,6 +88,6 @@ extension RestoranViewController: UICollectionViewDelegate, UICollectionViewData
         let fullWidth = UIScreen.main.bounds.size.width
         let cellSize: CGFloat = (fullWidth - cellInset) / 2.0
         
-        return CGSize(width: cellSize, height: cellSize + 35)
+        return CGSize(width: cellSize, height: cellSize/1.5)
     }
 }
