@@ -77,29 +77,29 @@ enum SimpraApi {
             
         }
     }
-
+    
     
     func getDataWithRealm <T: Object> (type: T.Type, success:@escaping () -> Void,
-                                    fail:@escaping (_ error:NSError)->Void)->Void where T:Mappable {
+                                       fail:@escaping (_ error:NSError)->Void)->Void where T:Mappable {
         Alamofire.request(URL(string: urlStr)!).responseArray { (response: DataResponse<[T]>) in
-           switch response.result {
-           case .success(let items):
-               do {
-                   let realm = try Realm()
-                   try realm.write {
-                       for item in items {
-                           realm.add(item)
-                       }
-                   }
-               } catch let error as NSError {
-                   fail(error)
-               }
-               success()
-           case .failure(let error):
-               fail(error as NSError)
-           }
-       }
-   }
+            switch response.result {
+            case .success(let items):
+                do {
+                    let realm = try Realm()
+                    try realm.write {
+                        for item in items {
+                            realm.add(item)
+                        }
+                    }
+                } catch let error as NSError {
+                    fail(error)
+                }
+                success()
+            case .failure(let error):
+                fail(error as NSError)
+            }
+        }
+    }
     
     /*!
      * @discussion Generic oluşturulmuş request methodu
@@ -114,6 +114,28 @@ enum SimpraApi {
                 //print("JSON: \(JSON)")
                 let d = Mapper<T>().map(JSONObject:JSON)
                 print(d)
+                switch(self) {
+                case .sections:
+                    DataManager.sharedInstance.sectionModel = d as? SectionResponse
+                    
+                case .groups:
+                   DataManager.sharedInstance.groups = d as? GroupsResponseModel
+                    
+                case .products:
+                    DataManager.sharedInstance.productModel = d as? ProductResponseModel
+                    
+                case .discount:
+                    DataManager.sharedInstance.discounModel = d as? DiscountResponseModel
+                    
+                case .actions:
+                    DataManager.sharedInstance.actionModel = d as? ActionResponseModel
+                    
+                case .tables:
+                    DataManager.sharedInstance.tablesModel = d as? TablesResponseModel
+                    
+                case .employess:
+                    DataManager.sharedInstance.employeeModel = d as? EmployeesResponseModel
+                }
                 
                 completion(d,response.error)
             }
