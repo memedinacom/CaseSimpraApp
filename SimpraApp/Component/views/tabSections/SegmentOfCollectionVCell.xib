@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SegmentOfCollectionVCell" id="thd-V3-hEg" customClass="SegmentOfCollectionVCell" customModule="SpoorcuIOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJr-yo-WMI">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="0Ul-YR-xyP">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ket-Sv-t2o">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ket-Sv-t2o" secondAttribute="height" multiplier="22:22" id="xbC-Ue-hZq"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icnMediaVideo" translatesAutoresizingMaskIntoConstraints="NO" id="Dpu-6h-dwB">
+                                <rect key="frame" x="344" y="0.0" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ATQ-0C-EKD"/>
+                                    <constraint firstAttribute="width" constant="30" id="Fow-fX-rQt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Ul-YR-xyP" firstAttribute="top" secondItem="fJr-yo-WMI" secondAttribute="top" id="Dzd-aV-vZY"/>
+                            <constraint firstAttribute="trailing" secondItem="Dpu-6h-dwB" secondAttribute="trailing" id="Fny-Vi-5fU"/>
+                            <constraint firstAttribute="bottom" secondItem="0Ul-YR-xyP" secondAttribute="bottom" id="G53-W4-UnO"/>
+                            <constraint firstItem="0Ul-YR-xyP" firstAttribute="leading" secondItem="fJr-yo-WMI" secondAttribute="leading" id="WW3-v9-Ls6"/>
+                            <constraint firstAttribute="trailing" secondItem="0Ul-YR-xyP" secondAttribute="trailing" id="rM5-38-LWd"/>
+                            <constraint firstItem="Dpu-6h-dwB" firstAttribute="top" secondItem="fJr-yo-WMI" secondAttribute="top" id="xm8-O5-Ykr"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpu-Cn-eP7" userLabel="Cell Select Button">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
+                        <connections>
+                            <action selector="didSelectCell:" destination="thd-V3-hEg" eventType="touchUpInside" id="STq-AX-UwZ"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="fJr-yo-WMI" firstAttribute="top" secondItem="thd-V3-hEg" secondAttribute="top" id="FBI-vI-C8r"/>
+                <constraint firstItem="jpu-Cn-eP7" firstAttribute="centerY" secondItem="VRh-g3-1GL" secondAttribute="centerY" id="Ne7-xX-ier"/>
+                <constraint firstItem="jpu-Cn-eP7" firstAttribute="height" secondItem="thd-V3-hEg" secondAttribute="height" id="OCO-as-Cus"/>
+                <constraint firstItem="fJr-yo-WMI" firstAttribute="leading" secondItem="thd-V3-hEg" secondAttribute="leading" id="OzZ-LR-49J"/>
+                <constraint firstItem="jpu-Cn-eP7" firstAttribute="centerX" secondItem="VRh-g3-1GL" secondAttribute="centerX" id="RYI-2t-n0Z"/>
+                <constraint firstItem="jpu-Cn-eP7" firstAttribute="width" secondItem="thd-V3-hEg" secondAttribute="width" id="hHb-2y-zrX"/>
+                <constraint firstAttribute="bottom" secondItem="fJr-yo-WMI" secondAttribute="bottom" id="y9p-q0-sYh"/>
+                <constraint firstAttribute="trailing" secondItem="fJr-yo-WMI" secondAttribute="trailing" id="zJi-1Z-v0X"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VRh-g3-1GL"/>
+            <size key="customSize" width="374" height="337"/>
+            <connections>
+                <outlet property="imgMediaType" destination="Dpu-6h-dwB" id="dTj-MV-Ofe"/>
+                <outlet property="imgPhoto" destination="ket-Sv-t2o" id="Fra-lc-I5o"/>
+            </connections>
+            <point key="canvasLocation" x="-57" y="180.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icnMediaVideo" width="30" height="30"/>
+    </resources>
+</document>
