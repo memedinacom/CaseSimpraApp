@@ -7,12 +7,12 @@
 //
 
 import UIKit
-protocol SegmentCellDelagate: class {
+protocol SubSegmentCellDelagate: class {
     
-    func didSelectCell(_ data:Any)
+    func didSubSelectCell(_ data:Any)
     // func didSelectVideoFullScreenCell()->VideoView
 }
-class SegmentOfCollectionVCell: UICollectionViewCell {
+class SubSegmentOfCollectionVCell: UICollectionViewCell {
     
     // MARK: - Outlets
     
@@ -20,7 +20,7 @@ class SegmentOfCollectionVCell: UICollectionViewCell {
     
     // MARK: - Properties
     
-    public weak var perDel: SegmentCellDelagate?
+    public weak var perDel: SubSegmentCellDelagate?
     
     private var itemData:MenuItem!
     
@@ -49,7 +49,7 @@ class SegmentOfCollectionVCell: UICollectionViewCell {
         
         if(perDel != nil){
             
-            perDel?.didSelectCell(itemData)
+            perDel?.didSubSelectCell(itemData)
         }
     }
 }

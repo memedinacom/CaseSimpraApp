@@ -2,14 +2,10 @@
 //  UIView+Additions.swift
 //  Passo
 //
-//  Created by Serdar Buhan on 27/07/2017.
-//  Copyright (c) 2003-2017 Monitise Group Limited. All rights reserved.
+//  Created by Mehmet Zeytin on 27/07/2017.
+//  Copyright (c) 2003-2017 Nuevo Group Limited. All rights reserved.
 //
-//  Save to the extent permitted by law, you may not use, copy, modify,
-//  distribute or create derivative works of this material or any part
-//  of it without the prior written consent of Monitise Group Limited.
-//  Any reproduction of this material must contain this notice.
-//
+
 
 import UIKit
 
@@ -19,8 +15,8 @@ extension UIView {
     let view = viewFromNibForClass()
     view.frame = bounds
     view.autoresizingMask = [
-      UIViewAutoresizing.flexibleWidth,
-      UIViewAutoresizing.flexibleHeight
+        UIView.AutoresizingMask.flexibleWidth,
+        UIView.AutoresizingMask.flexibleHeight
     ]
     addSubview(view)
 
@@ -53,7 +49,7 @@ extension UIView {
         
         let activity = UIActivityIndicatorView(frame: CGRect(origin: view.center, size: CGSize(width: 40, height: 40)))
         
-        activity.activityIndicatorViewStyle = .white
+        activity.style = .white
         activity.color = UIColor.lightGray
         activity.hidesWhenStopped = true
         

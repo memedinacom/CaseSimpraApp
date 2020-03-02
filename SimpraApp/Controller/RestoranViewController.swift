@@ -22,11 +22,13 @@ class RestoranViewController: UIViewController {
     var allScores = [MenuItem]()
     @IBOutlet private weak var collectionView: UICollectionView!
 
+    @IBOutlet weak var segmentView: SegmentView!
+    @IBOutlet weak var subSegmentView: SegmentView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setupNavigationBarItems()
+        self.prepareUI()
         self.configure()
         
          NewLoadingView.shared.show()
@@ -36,13 +38,41 @@ class RestoranViewController: UIViewController {
             self!.allScores = (self?.sortProduct())!
             self?.collectionView.reloadData()
             
+            var items = SegmentItem()
+                 items.title = "Sıcak içecek"
+            
+            var items1 = SegmentItem()
+                            items1.title = "Sıcak  sfs içecek"
+            
+            var items2 = SegmentItem()
+                            items2.title = " içecek"
+            
+            var items3 = SegmentItem()
+                            items3.title = "Sıcasdfsd k içecek"
+            
+            self!.segmentView.loadData([items,items1 , items2, items3, items, items, items, items2, items1] ) { (response) in
+                
+                self!.subSegmentView.loadData([items2,items , items, items2, items, items1, items2, items2, items2], type:.subGroup) { (response) in
+                               
+                               
+                           }
+                
+                
+            }
+            
         }
-
+       
         
     }
     
+    private func prepareUI(){
+        self.setupNavigationBarItems()
+        self.view.backgroundColor = UIColor.lightGray
+    }
+    
     private func configure() {
-
+            
+        
         let nib = UINib(nibName: "ProductPreviewCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "ProductPreviewCell")
         collectionView.allowsSelection = true
@@ -84,7 +114,7 @@ extension RestoranViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let cellInset: CGFloat = 20.0 // for 3 cells per row
+        let cellInset: CGFloat = 20 // for 2 cells per row
         let fullWidth = UIScreen.main.bounds.size.width
         let cellSize: CGFloat = (fullWidth - cellInset) / 2.0
         

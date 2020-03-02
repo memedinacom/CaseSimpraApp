@@ -6,6 +6,9 @@
          contextName = "RootClass.mapping(map:):RootClass.swift">
       </ContextState>
       <ContextState
+         contextName = "ProductPreviewCell.didSelect():ProductPreviewCell.swift">
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in SimpraDB.saveSection(_:):SimpraDB.swift">
       </ContextState>
       <ContextState
@@ -21,6 +24,9 @@
       </ContextState>
       <ContextState
          contextName = "closure #1 in RestoranViewController.viewDidLoad():RestoranViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SegmentView.setup():SegmentView.swift">
       </ContextState>
       <ContextState
          contextName = "SectionResponseModel.mapping(map:):SectionResponseModel.swift">
@@ -51,7 +57,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "SegmentView.collectionView(_:cellForItemAt:):SegmentView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dataList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "RestoranViewController.sortProduct():RestoranViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SegmentView.collectionView(_:numberOfItemsInSection:):SegmentView.swift">
       </ContextState>
       <ContextState
          contextName = "closure #1 in RestoranViewController.sortProduct():RestoranViewController.swift">

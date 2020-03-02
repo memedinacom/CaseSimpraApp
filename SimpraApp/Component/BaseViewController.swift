@@ -17,7 +17,7 @@ class BaseViewController: UIViewController {
     }
     
     func prepareNavigationBar(){
-        self.navigationController?.navigationBar.backgroundColor = .clear
+        self.navigationController?.navigationBar.backgroundColor = .darkGray
     }
     
     func gotoLogin(){

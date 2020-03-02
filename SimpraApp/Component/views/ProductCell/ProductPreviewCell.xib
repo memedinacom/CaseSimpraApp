@@ -158,6 +158,7 @@
             <connections>
                 <outlet property="contentTypeImageView" destination="o6c-hj-hhi" id="YZt-Vg-b42"/>
                 <outlet property="descriptionLabel" destination="uTe-7x-UTY" id="W13-89-sPs"/>
+                <outlet property="priceLabel" destination="efw-Y2-d7s" id="qIf-aJ-Z93"/>
             </connections>
             <point key="canvasLocation" x="152" y="149.77511244377811"/>
         </collectionViewCell>

@@ -10,7 +10,8 @@ class ProductPreviewCell: UICollectionViewCell {
     
     @IBOutlet private weak var contentTypeImageView: UIImageView!
     @IBOutlet private weak var descriptionLabel: UILabel!
-    
+    @IBOutlet private weak var priceLabel: UILabel!
+
     
     // MARK: - Properties
     
@@ -30,6 +31,7 @@ class ProductPreviewCell: UICollectionViewCell {
         
         self.delegate = delegate
         self.descriptionLabel.text = post.name
+        self.priceLabel.text = "\(post.price!) TRY"
         self.product = post
         
     }

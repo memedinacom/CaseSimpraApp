@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SegmentOfCollectionVCell" id="thd-V3-hEg" customClass="SegmentOfCollectionVCell" customModule="SimpraApp">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SubSegmentOfCollectionVCell" id="thd-V3-hEg" customClass="SubSegmentOfCollectionVCell" customModule="SimpraApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="374" height="108"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -23,11 +23,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="0Ul-YR-xyP">
                                 <rect key="frame" x="0.0" y="0.0" width="374" height="108"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpu-Cn-eP7" userLabel="Cell Select Button">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpu-Cn-eP7" userLabel="Cell Select Button" customClass="RoundedButton" customModule="SimpraApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="108"/>
-                                        <state key="normal" title="-">
-                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                        <state key="normal" title="-"/>
                                         <connections>
                                             <action selector="didSelectCell:" destination="thd-V3-hEg" eventType="touchUpInside" id="STq-AX-UwZ"/>
                                             <action selector="selectButton" destination="thd-V3-hEg" eventType="touchUpInside" id="RSq-6J-sGH"/>

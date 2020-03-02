@@ -14,6 +14,15 @@
 		7A42F2E3240B2D06009B94A2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2E2240B2D06009B94A2 /* DataManager.swift */; };
 		7A42F2E5240B31FA009B94A2 /* RestoranViewController+Navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2E4240B31FA009B94A2 /* RestoranViewController+Navbar.swift */; };
 		7A42F2E7240BC914009B94A2 /* SimpraLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2E6240BC914009B94A2 /* SimpraLabel.swift */; };
+		7A42F2EB240BE5BC009B94A2 /* SegmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A42F2E9240BE5BC009B94A2 /* SegmentView.xib */; };
+		7A42F2EC240BE5BC009B94A2 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2EA240BE5BC009B94A2 /* SegmentView.swift */; };
+		7A42F2EF240BE5D9009B94A2 /* SegmentOfCollectionVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A42F2ED240BE5D9009B94A2 /* SegmentOfCollectionVCell.xib */; };
+		7A42F2F0240BE5D9009B94A2 /* SegmentOfCollectionVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2EE240BE5D9009B94A2 /* SegmentOfCollectionVCell.swift */; };
+		7A42F2F2240BE6A1009B94A2 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2F1240BE6A1009B94A2 /* Reusable.swift */; };
+		7A42F2F4240BE6BA009B94A2 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2F3240BE6BA009B94A2 /* NibLoadable.swift */; };
+		7A42F2F6240BE6E9009B94A2 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2F5240BE6E9009B94A2 /* UIView+Additions.swift */; };
+		7A42F2F9240C54C1009B94A2 /* SubSegmentOfCollectionVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A42F2F7240C54C0009B94A2 /* SubSegmentOfCollectionVCell.xib */; };
+		7A42F2FA240C54C1009B94A2 /* SubSegmentOfCollectionVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42F2F8240C54C0009B94A2 /* SubSegmentOfCollectionVCell.swift */; };
 		7A878DA824085A9200DA473B /* SimpraDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A878DA724085A9200DA473B /* SimpraDB.swift */; };
 		7A878DB124085C9F00DA473B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A878DB024085C9F00DA473B /* Enums.swift */; };
 		7A8CE55C240B05D0000E5AD2 /* EmployeesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE54B240B05D0000E5AD2 /* EmployeesResponseModel.swift */; };
@@ -69,6 +78,15 @@
 		7A42F2E2240B2D06009B94A2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7A42F2E4240B31FA009B94A2 /* RestoranViewController+Navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestoranViewController+Navbar.swift"; sourceTree = "<group>"; };
 		7A42F2E6240BC914009B94A2 /* SimpraLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpraLabel.swift; sourceTree = "<group>"; };
+		7A42F2E9240BE5BC009B94A2 /* SegmentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentView.xib; sourceTree = "<group>"; };
+		7A42F2EA240BE5BC009B94A2 /* SegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
+		7A42F2ED240BE5D9009B94A2 /* SegmentOfCollectionVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentOfCollectionVCell.xib; sourceTree = "<group>"; };
+		7A42F2EE240BE5D9009B94A2 /* SegmentOfCollectionVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentOfCollectionVCell.swift; sourceTree = "<group>"; };
+		7A42F2F1240BE6A1009B94A2 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		7A42F2F3240BE6BA009B94A2 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		7A42F2F5240BE6E9009B94A2 /* UIView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		7A42F2F7240C54C0009B94A2 /* SubSegmentOfCollectionVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubSegmentOfCollectionVCell.xib; sourceTree = "<group>"; };
+		7A42F2F8240C54C0009B94A2 /* SubSegmentOfCollectionVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubSegmentOfCollectionVCell.swift; sourceTree = "<group>"; };
 		7A878DA724085A9200DA473B /* SimpraDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpraDB.swift; sourceTree = "<group>"; };
 		7A878DB024085C9F00DA473B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		7A8CE54B240B05D0000E5AD2 /* EmployeesResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesResponseModel.swift; sourceTree = "<group>"; };
@@ -130,6 +148,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A42F2E8240BE5A5009B94A2 /* tabSections */ = {
+			isa = PBXGroup;
+			children = (
+				7A42F2F8240C54C0009B94A2 /* SubSegmentOfCollectionVCell.swift */,
+				7A42F2F7240C54C0009B94A2 /* SubSegmentOfCollectionVCell.xib */,
+				7A42F2EE240BE5D9009B94A2 /* SegmentOfCollectionVCell.swift */,
+				7A42F2ED240BE5D9009B94A2 /* SegmentOfCollectionVCell.xib */,
+				7A42F2EA240BE5BC009B94A2 /* SegmentView.swift */,
+				7A42F2E9240BE5BC009B94A2 /* SegmentView.xib */,
+			);
+			path = tabSections;
+			sourceTree = "<group>";
+		};
 		7A878D982408378C00DA473B /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +250,7 @@
 		7A8CE571240B14B4000E5AD2 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				7A42F2F3240BE6BA009B94A2 /* NibLoadable.swift */,
 				7A8CE572240B14D5000E5AD2 /* LoadingHandler.swift */,
 				7A42F2E0240B25D7009B94A2 /* StoryBoardable.swift */,
 			);
@@ -255,6 +287,7 @@
 		7A8CE57B240B1B4D000E5AD2 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				7A42F2E8240BE5A5009B94A2 /* tabSections */,
 				7A8CE583240B1E8B000E5AD2 /* ProductCell */,
 				7A8CE57C240B1B72000E5AD2 /* BaseRoundedTextFied.swift */,
 				7A8CE584240B1E9C000E5AD2 /* RoundedButton.swift */,
@@ -266,6 +299,8 @@
 		7A8CE57E240B1BB6000E5AD2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7A42F2F5240BE6E9009B94A2 /* UIView+Additions.swift */,
+				7A42F2F1240BE6A1009B94A2 /* Reusable.swift */,
 				7A8CE57F240B1BCA000E5AD2 /* UIColor.swift */,
 				7A8CE581240B1C29000E5AD2 /* UIFont.swift */,
 				7A8CE58B240B245F000E5AD2 /* StoryBoard.swift */,
@@ -447,11 +482,14 @@
 				7A8CE589240B2365000E5AD2 /* SplashScreen.storyboard in Resources */,
 				7A8CE575240B151A000E5AD2 /* simpra-liquid-loading.json in Resources */,
 				7AEFE4962408301900688933 /* Assets.xcassets in Resources */,
+				7A42F2EB240BE5BC009B94A2 /* SegmentView.xib in Resources */,
 				7ACCA4322409A97900150248 /* cars.json in Resources */,
 				7ACCA42E2409934300150248 /* default.realm in Resources */,
+				7A42F2EF240BE5D9009B94A2 /* SegmentOfCollectionVCell.xib in Resources */,
 				7A37BCC1240B46ED005AA776 /* ProductPreviewCell.xib in Resources */,
 				7A8CE579240B19EE000E5AD2 /* Login.storyboard in Resources */,
 				7AEFE4912408301700688933 /* Main.storyboard in Resources */,
+				7A42F2F9240C54C1009B94A2 /* SubSegmentOfCollectionVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,14 +545,17 @@
 				7A8CE55E240B05D0000E5AD2 /* Discount.swift in Sources */,
 				7ACCA4452409EC3300150248 /* Section.swift in Sources */,
 				7A42F2E5240B31FA009B94A2 /* RestoranViewController+Navbar.swift in Sources */,
+				7A42F2F4240BE6BA009B94A2 /* NibLoadable.swift in Sources */,
 				7A8CE561240B05D0000E5AD2 /* ActionResponseModel.swift in Sources */,
 				7ACCA4342409AF1600150248 /* ArrayTransform.swift in Sources */,
 				7AEFE4A22408315E00688933 /* NetworkManager.swift in Sources */,
 				7A8CE58A240B2365000E5AD2 /* SplashScreenViewController.swift in Sources */,
+				7A42F2F0240BE5D9009B94A2 /* SegmentOfCollectionVCell.swift in Sources */,
 				7A8CE570240B12F8000E5AD2 /* BaseViewController.swift in Sources */,
 				7A37BCC0240B46ED005AA776 /* ProductPreviewCell.swift in Sources */,
 				7ACCA44B2409EC7F00150248 /* Group.swift in Sources */,
 				7AEFE48E2408301700688933 /* RestoranViewController.swift in Sources */,
+				7A42F2F2240BE6A1009B94A2 /* Reusable.swift in Sources */,
 				7A8CE562240B05D0000E5AD2 /* TenderMedia.swift in Sources */,
 				7ACCA44C2409EC7F00150248 /* MenuItemCountByGroup.swift in Sources */,
 				7A8CE564240B05D0000E5AD2 /* RevenueCenter.swift in Sources */,
@@ -531,6 +572,7 @@
 				7A42F2E7240BC914009B94A2 /* SimpraLabel.swift in Sources */,
 				7A8CE568240B05D0000E5AD2 /* ProductResponseModel.swift in Sources */,
 				7A8CE55C240B05D0000E5AD2 /* EmployeesResponseModel.swift in Sources */,
+				7A42F2F6240BE6E9009B94A2 /* UIView+Additions.swift in Sources */,
 				7A8CE55D240B05D0000E5AD2 /* Employee.swift in Sources */,
 				7A8CE580240B1BCB000E5AD2 /* UIColor.swift in Sources */,
 				7AEFE48C2408301700688933 /* AppDelegate.swift in Sources */,
@@ -541,9 +583,11 @@
 				7A878DA824085A9200DA473B /* SimpraDB.swift in Sources */,
 				7AEFE4942408301700688933 /* SimpraApp.xcdatamodeld in Sources */,
 				7A8CE585240B1E9C000E5AD2 /* RoundedButton.swift in Sources */,
+				7A42F2FA240C54C1009B94A2 /* SubSegmentOfCollectionVCell.swift in Sources */,
 				7ACCA44D2409EC7F00150248 /* MenuItemGroup.swift in Sources */,
 				7A8CE560240B05D0000E5AD2 /* ViewOption.swift in Sources */,
 				7A8CE56E240B12B9000E5AD2 /* LoginViewController.swift in Sources */,
+				7A42F2EC240BE5BC009B94A2 /* SegmentView.swift in Sources */,
 				7A8CE565240B05D0000E5AD2 /* TablesResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
