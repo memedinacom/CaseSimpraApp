@@ -22,7 +22,7 @@ class SegmentOfCollectionVCell: UICollectionViewCell {
     
     public weak var perDel: SegmentCellDelagate?
     
-    private var itemData:MenuItem!
+    private var itemData:Any!
     
     
     
@@ -30,19 +30,20 @@ class SegmentOfCollectionVCell: UICollectionViewCell {
     // MARK: - Functions
     
     func updateData(_ data:Any){
+        self.itemData = data
         if let item = data as? SegmentItem{
             self.button?.setTitle(item.title, for: .normal)
         }
     }
     
     @IBAction func selectButton(){
-        button?.backgroundColor = UIColor.orange
-        button?.titleLabel?.textColor = UIColor.white
+        //button?.backgroundColor = UIColor.orange
+        //button?.titleLabel?.textColor = UIColor.white
     }
     
     @IBAction func deSelectButton(){
-        button?.tintColor = UIColor.white
-        button?.titleLabel?.textColor = UIColor.lightGray
+        //button?.tintColor = UIColor.white
+        //button?.titleLabel?.textColor = UIColor.lightGray
     }
     
     @IBAction func didSelectCell(_ sender: Any) {

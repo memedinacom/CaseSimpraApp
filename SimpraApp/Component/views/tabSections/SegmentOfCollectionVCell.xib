@@ -23,10 +23,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="0Ul-YR-xyP">
                                 <rect key="frame" x="0.0" y="0.0" width="374" height="108"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpu-Cn-eP7" userLabel="Cell Select Button">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpu-Cn-eP7" userLabel="Cell Select Button">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="108"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="-">
-                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="didSelectCell:" destination="thd-V3-hEg" eventType="touchUpInside" id="STq-AX-UwZ"/>
@@ -36,7 +38,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0Ul-YR-xyP" firstAttribute="top" secondItem="fJr-yo-WMI" secondAttribute="top" id="Dzd-aV-vZY"/>
                             <constraint firstAttribute="bottom" secondItem="0Ul-YR-xyP" secondAttribute="bottom" id="G53-W4-UnO"/>
@@ -47,6 +49,7 @@
                     </view>
                 </subviews>
             </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fJr-yo-WMI" firstAttribute="top" secondItem="thd-V3-hEg" secondAttribute="top" id="FBI-vI-C8r"/>
                 <constraint firstItem="fJr-yo-WMI" firstAttribute="leading" secondItem="thd-V3-hEg" secondAttribute="leading" id="OzZ-LR-49J"/>
