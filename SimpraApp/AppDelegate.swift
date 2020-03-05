@@ -10,7 +10,8 @@ import UIKit
 import CoreData
 import RealmSwift
 import IQKeyboardManagerSwift
-
+import Realm
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         self.keyboardManagerSetSetting()
+        
+        let con = Realm.Configuration(
+            schemaVersion: 1,
+            migrationBlock:{migration, oldSchemaVersion in })
+        
+        Realm.Configuration.defaultConfiguration = con
 
         
         return true
