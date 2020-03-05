@@ -39,7 +39,4 @@ extension UIFont{
     class var helveticaMedium23: UIFont {
         return UIFont(name: "HelveticaNeue-Medium", size: 23)!
     }
-    class func ekTextStyle23Font() -> UIFont? {
-        return UIFont(name: "MinionPro-Bold", size: 23.0)
-    }
 }
