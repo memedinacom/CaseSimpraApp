@@ -10,10 +10,16 @@
 import UIKit
 
 class RoundedButton: UIButton {
-    
+    @IBInspectable var isOrange: Bool = false {
+        didSet {
+            if(isOrange){
+                self.backgroundColor = .orange
+            }
+        }
+    }
     
     override func prepareForInterfaceBuilder() {
-        self.layer.cornerRadius = 20
+        self.layer.cornerRadius = 5
         self.titleLabel?.font = UIFont.helveticaNeueBold
         self.backgroundColor = UIColor.orange3
         self.tintColor = UIColor.white

@@ -29,7 +29,7 @@ import UIKit
     public var isfirstCapitalLetter = false
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.layer.cornerRadius = 20
+        self.layer.cornerRadius = 10
         self.layer.borderWidth = 0.5
         self.borderStyle = UITextField.BorderStyle.none
         //self.textAlignment = .center
@@ -42,7 +42,7 @@ import UIKit
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.layer.cornerRadius = 20
+        self.layer.cornerRadius = 10
         self.layer.borderWidth = 0.5
         self.selectedBorderColor = UIColor.orange1
         self.borderStyle = UITextField.BorderStyle.none
