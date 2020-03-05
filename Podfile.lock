@@ -13,11 +13,14 @@ PODS:
   - IQKeyboardManagerSwift (6.5.5)
   - lottie-ios (3.1.6)
   - ObjectMapper (3.5.1)
+  - QuickLayout (3.0.0)
   - Realm (4.3.2):
     - Realm/Headers (= 4.3.2)
   - Realm/Headers (4.3.2)
   - RealmSwift (4.3.2):
     - Realm (= 4.3.2)
+  - SwiftEntryKit (1.1.4):
+    - QuickLayout (= 3.0.0)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
@@ -28,6 +31,7 @@ DEPENDENCIES:
   - lottie-ios
   - ObjectMapper
   - RealmSwift (~> 4.3.2)
+  - SwiftEntryKit (~> 1.1.4)
   - SwiftyJSON
 
 SPEC REPOS:
@@ -39,8 +43,10 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - lottie-ios
     - ObjectMapper
+    - QuickLayout
     - Realm
     - RealmSwift
+    - SwiftEntryKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -51,10 +57,12 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
   Realm: 5e92902e2875dff4bb0fd02f67bb737c3d5db2bc
   RealmSwift: 9a360fc7bae04fc2e308a34fbd899d5faa2d6b22
+  SwiftEntryKit: fa997eb1c45afb5cf27ab0145e680759dd7152ca
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 6d05ed23189cc12669f676f93f4774f05686289d
+PODFILE CHECKSUM: ef93627f24488547cbe9b7209144b821aac79e7b
 
 COCOAPODS: 1.8.4

@@ -14,4 +14,5 @@ pod 'AlamofireObjectMapper'
 pod "CellularLocalStorage"
 pod 'lottie-ios'
 pod 'IQKeyboardManagerSwift'
+pod 'SwiftEntryKit', '~> 1.1.4'
 end
