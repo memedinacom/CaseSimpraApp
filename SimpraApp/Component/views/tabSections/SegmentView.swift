@@ -10,11 +10,13 @@ import UIKit
 
 protocol SegmentViewDelegate: NSObjectProtocol {
     func didSelectCell(_ data: Any)
+    func didSubSelectCell(_ data: Any , indexPath index:Int)
 }
 
 public struct SegmentItem {
     var title:String?
     var id:String?
+    var subList:[Any]?
 }
 public struct SubSegmentItem {
     var title:String?
@@ -38,13 +40,13 @@ class SegmentView: UIView, NibReusable {
     // MARK: - Properties
     
     
-    
-    var dataList:[SegmentItem] = []
+    var selectData:Any?
+    var dataList:[Any] = []
     var cellSize:Int = 0
     var isLoadedData = true
     var typeOfSegment:SegmentType = .group
     weak var delegate: SegmentViewDelegate?
-    
+    var selectSubGorupIndex:Int = 0
     // MARK: - Lifecyle
     
     convenience init(with _delegate: SegmentViewDelegate) {
@@ -69,9 +71,6 @@ class SegmentView: UIView, NibReusable {
     func flowCollectionView(){
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-        //layout.minimumLineSpacing = 2
-        //layout.minimumInteritemSpacing = 2
-        //self.collectionViewTab?.collectionViewLayout = layout
     }
     
     // MARK: - Functions
@@ -91,13 +90,14 @@ class SegmentView: UIView, NibReusable {
         self.titleLabe.setTitle(data.title, for: .normal)
     }
     
-    public func loadData(_ data:[SegmentItem],
+    public func loadData(_ data:[Any],
                          type:SegmentType? = .group ,
                          completion: @escaping (_ isSucces:Bool) -> Void) {
         typeOfSegment = type ?? SegmentType.group
         self.dataList = data
-        self.collectionViewTab.reloadData()
+        
         completion(true)
+        self.collectionViewTab.reloadData()
     }
     
 }
@@ -128,6 +128,9 @@ extension SegmentView: UICollectionViewDelegate, UICollectionViewDataSource, UIC
             
             cell.updateData(dataList[indexPath.row])
             cell.perDel = self
+            cell.tag = indexPath.row
+            selectSubGorupIndex == indexPath.row ? cell.selectButton(): cell.deSelectButton()
+            
             self.setNeedsDisplay()
             self.layoutIfNeeded()
             return cell
@@ -140,8 +143,14 @@ extension SegmentView: UICollectionViewDelegate, UICollectionViewDataSource, UIC
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         //Segment widht hesplanması
-        let item = dataList[indexPath.row]
-        let width = self.estimatedFrame(text: item.title ?? "", font: UIFont.helveticaNeueBold).width + 50
+        var strValue = ""
+        if let item = dataList[indexPath.row] as? SubSegmentItem{
+            strValue = item.title!
+        }
+        if let item = dataList[indexPath.row] as? SegmentItem{
+            strValue = item.title!
+        }
+        let width = self.estimatedFrame(text: strValue, font: UIFont.helveticaNeueBold).width + 50
         
         return CGSize(width: width, height: 50)
     }
@@ -156,20 +165,34 @@ extension SegmentView: UICollectionViewDelegate, UICollectionViewDataSource, UIC
                                                    attributes: [NSAttributedString.Key.font: font],
                                                    context: nil)
     }
+    
+//    func resetSubCell(_ index:Int? = 0){
+//        for cell in collectionViewTab.visibleCells as [UICollectionViewCell] {
+//            
+//            if let subCell = cell as? SubSegmentOfCollectionVCell{
+//                subCell.deSelectButton()
+//                (subCell.tag  == index) ? subCell.selectButton() : subCell.deSelectButton()
+//            }
+//        }
+//    }
 }
 
 // MARK: - Protocol- SegmentCellDelagate
 extension SegmentView: SegmentCellDelagate {
     
     func didSelectCell(_ data: Any) {
-        
         delegate?.didSelectCell(data)
     }
 }
 
+
+// MARK: - Protocol- SubSegmentCellDelagate
+
 extension SegmentView: SubSegmentCellDelagate {
-    func didSubSelectCell(_ data: Any) {
-        
+    func didSubSelectCell(_ data: Any, indexPath index: Int) {
+        selectSubGorupIndex = index
+        delegate?.didSubSelectCell(data, indexPath: index)
     }
+
     
 }

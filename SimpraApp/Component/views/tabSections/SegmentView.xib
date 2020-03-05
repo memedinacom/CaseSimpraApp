@@ -22,7 +22,7 @@
                     <subviews>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="moh-7A-QEv">
                             <rect key="frame" x="0.0" y="0.0" width="332" height="517"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="4" id="Umo-lF-spX">
                                 <size key="itemSize" width="0.0" height="0.0"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -37,7 +37,7 @@
                     </subviews>
                 </stackView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="uOM-bR-SjH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="6Pf-rm-RjV"/>
                 <constraint firstAttribute="trailing" secondItem="uOM-bR-SjH" secondAttribute="trailing" constant="4" id="B1N-3h-CMm"/>
