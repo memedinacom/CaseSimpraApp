@@ -9,47 +9,53 @@
 import UIKit
 protocol SubSegmentCellDelagate: class {
     
-    func didSubSelectCell(_ data:Any)
+    func didSubSelectCell(_ data:Any , indexPath index:Int)
     // func didSelectVideoFullScreenCell()->VideoView
 }
 class SubSegmentOfCollectionVCell: UICollectionViewCell {
     
     // MARK: - Outlets
     
-    @IBOutlet weak var button:RoundedButton?
+    @IBOutlet weak var button:UIButton?
     
     // MARK: - Properties
     
     public weak var perDel: SubSegmentCellDelagate?
     
-    private var itemData:MenuItem!
+    private var itemData:Any!
     
     
     
     
     // MARK: - Functions
     
+    
     func updateData(_ data:Any){
-        if let item = data as? SegmentItem{
+        self.itemData = data
+        if let item = data as? SubSegmentItem{
             self.button?.setTitle(item.title, for: .normal)
         }
     }
     
     @IBAction func selectButton(){
-        button?.backgroundColor = UIColor.orange
-        button?.titleLabel?.textColor = UIColor.white
+        //button?.backgroundColor = UIColor.orange
+        //button?.titleLabel?.textColor = UIColor.white
     }
     
-    @IBAction func deSelectButton(){
-        button?.tintColor = UIColor.white
-        button?.titleLabel?.textColor = UIColor.lightGray
+    
+    public func deselect(){
+        //button?.backgroundColor = UIColor.white
+        //button?.titleLabel?.textColor = UIColor.darkGray
+    }
+    func deSelectButton(){
+        self.deselect()
     }
     
     @IBAction func didSelectCell(_ sender: Any) {
         
         if(perDel != nil){
             
-            perDel?.didSubSelectCell(itemData)
+            perDel?.didSubSelectCell(itemData, indexPath: self.tag)
         }
     }
 }
