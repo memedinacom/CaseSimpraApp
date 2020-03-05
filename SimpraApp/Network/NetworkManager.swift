@@ -14,15 +14,13 @@ import RealmSwift
 import Realm
 import AlamofireObjectMapper
 
-
-
 /*!
  * @discussion Network Manager
  * @params Sections , groups , discount , actions , tables ,employess
  * @return <#returntype#>
  */
 
-
+// MARK: - ENUM Simpra API
 enum SimpraApi {
     
     case sections
@@ -33,8 +31,7 @@ enum SimpraApi {
     case tables
     case employess
     
-    
-    //Coolest Swift Method
+    // MARK: - Path for Request -> using for URL created
     static let  API_URL = "https://api.myjson.com/bins/"
     var path : String {
         get {
@@ -62,14 +59,14 @@ enum SimpraApi {
             }
         }
     }
-    
+    // MARK: - URL String for Request URL
     var urlStr:String{
         get{
             return SimpraApi.API_URL + path
         }
     }
     
-    
+    // MARK: - URL for Request
     var Url : URL {
         get {
             
@@ -102,7 +99,7 @@ enum SimpraApi {
     }
     
     /*!
-     * @discussion Generic oluşturulmuş request methodu
+     * @discussion Generic oluşturulmuş request methodu Mapable ile çalışıyor
      * @params <T> generic
      * @return response, error
      */
@@ -113,13 +110,12 @@ enum SimpraApi {
             if let JSON = response.result.value {
                 //print("JSON: \(JSON)")
                 let d = Mapper<T>().map(JSONObject:JSON)
-                print(d)
                 switch(self) {
                 case .sections:
                     DataManager.sharedInstance.sectionModel = d as? SectionResponse
                     
                 case .groups:
-                   DataManager.sharedInstance.groups = d as? GroupsResponseModel
+                    DataManager.sharedInstance.groups = d as? GroupsResponseModel
                     
                 case .products:
                     DataManager.sharedInstance.productModel = d as? ProductResponseModel
@@ -144,7 +140,23 @@ enum SimpraApi {
         
     }
     
+    /*!
+     * @discussion Generic oluşturulmuş request methodu Codable ile çalışıyor
+     * @params <T> generic
+     * @return response, error
+     */
+    func fetchs<T: Decodable>(decodable: T.Type, completion:@escaping (_ details: T) -> Void)
+    {
+        Alamofire.request(URL(string: self.urlStr)!).responseJSON { response in
+            let result_ = response.data
+            do {
+                let data = try JSONDecoder().decode(T.self, from: result_!)
+                completion(data)
+            } catch let e as NSError {
+                print("error : \(e)")
+            }
+        }
+    }
+    
 }
-
-
 

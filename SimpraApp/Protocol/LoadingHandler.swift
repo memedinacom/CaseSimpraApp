@@ -11,9 +11,7 @@ import Foundation
 import UIKit
 import Lottie
 
-
 /**
- 
  loading static instance'dan show(on <#UIView#>, <#message?#>) ya da UIView'den türemiş bir class'da 'showLoading(<#message?#>)' fonksiyonu ile gösterilebilir.
  static instance'dan çağırıldığında tüm ekranda gösterilir.
  view'dan çağrıldığında view'ın bounds'una göre boyutlandırılır.
@@ -25,6 +23,7 @@ class NewLoadingView: UIView {
     
     private var activityIndicator: AnimationView!
     
+    // MARK: - Initialize
     private override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -42,6 +41,7 @@ class NewLoadingView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Show Loading
     public func show(on view: UIView? = nil, message: String? = nil) {
         self.backgroundColor = .clear
         DispatchQueue.main.async {
@@ -67,6 +67,7 @@ class NewLoadingView: UIView {
         }
     }
     
+    // MARK: - Hide Loading
     public func hide() {
         
         DispatchQueue.main.async {
