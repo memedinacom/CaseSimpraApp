@@ -38,7 +38,7 @@ class BaseViewController: UIViewController {
         rootViewController.view.removeFromSuperview()
         rootViewController.dismiss(animated: false, completion: {
             
-            let view = RestoranViewController.instantiate(fromAppStoryboard: .Main)
+            let view = FastFoodViewController.instantiate(fromAppStoryboard: .Main)
             //view.hideBackButton = true
             self.showRootViewController(view, inWindow: self.appDelegate.window!, isNavBar: true)
         })

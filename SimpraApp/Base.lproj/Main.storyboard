@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Restoran View Controller-->
+        <!--Fast Food View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="RestoranViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="RestoranViewController" customModule="SimpraApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FastFoodViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FastFoodViewController" customModule="SimpraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,19 +24,20 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqg-BI-oz2" customClass="SegmentView" customModule="SimpraApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="sq9-KY-bKF"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKR-RM-GSS" customClass="SegmentView" customModule="SimpraApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="60" width="414" height="60"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="NVp-ek-naz"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="L8L-nC-LOy">
                                         <rect key="frame" x="0.0" y="130" width="414" height="722"/>
@@ -78,11 +79,159 @@
                         <outlet property="collectionView" destination="L8L-nC-LOy" id="XGC-PW-QLR"/>
                         <outlet property="segmentView" destination="Zqg-BI-oz2" id="s4k-hL-Gk3"/>
                         <outlet property="subSegmentView" destination="oKR-RM-GSS" id="vvJ-5T-e4w"/>
+                        <segue destination="G9k-sm-Jue" kind="popoverPresentation" identifier="FastFoodToSetting" popoverAnchorView="L8L-nC-LOy" id="iwq-CC-Xmn">
+                            <popoverArrowDirection key="popoverArrowDirection" right="YES"/>
+                            <popoverPassthroughViews>
+                                <view reference="8bC-Xf-vdC"/>
+                            </popoverPassthroughViews>
+                        </segue>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-107.24637681159422" y="66.964285714285708"/>
         </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="uBv-vQ-oPO">
+            <objects>
+                <viewController id="G9k-sm-Jue" customClass="SettingViewController" customModule="SimpraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iqg-kY-22f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="SvB-E5-Ad3">
+                                <rect key="frame" x="8" y="4" width="398" height="136.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="aWv-cS-ggT">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="47.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch2-WM-HGa">
+                                                <rect key="frame" x="146.5" y="0.0" width="105" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yönetici" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VP-gt-BRi">
+                                                <rect key="frame" x="173.5" y="30.5" width="51.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Rrw-Ji-ugK">
+                                        <rect key="frame" x="0.0" y="56.5" width="398" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66m-kG-AlV" customClass="SettingButton" customModule="SimpraApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="199" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="MYd-B6-p7m"/>
+                                                </constraints>
+                                                <state key="normal" title="Fastfood" image="food">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="small"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spc-NC-oxt" customClass="SettingButton" customModule="SimpraApp" customModuleProvider="target">
+                                                <rect key="frame" x="199" y="0.0" width="199" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="HPc-kF-Wmj"/>
+                                                </constraints>
+                                                <state key="normal" title="Restoran" image="fork">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OA6-lO-LSv">
+                                <rect key="frame" x="8" y="150.5" width="398" height="647.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="G9k-sm-Jue" id="4Nj-rJ-MHF"/>
+                                    <outlet property="delegate" destination="G9k-sm-Jue" id="nQh-uZ-64o"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93409301425508884" green="0.93409301425508884" blue="0.93409301425508884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="u1j-hJ-f2q" firstAttribute="trailing" secondItem="OA6-lO-LSv" secondAttribute="trailing" constant="8" id="1bE-y7-T3v"/>
+                            <constraint firstItem="SvB-E5-Ad3" firstAttribute="top" secondItem="u1j-hJ-f2q" secondAttribute="top" constant="4" id="GEa-jS-ehR"/>
+                            <constraint firstItem="SvB-E5-Ad3" firstAttribute="leading" secondItem="u1j-hJ-f2q" secondAttribute="leading" constant="8" id="S0P-wz-cDp"/>
+                            <constraint firstItem="OA6-lO-LSv" firstAttribute="leading" secondItem="u1j-hJ-f2q" secondAttribute="leading" constant="8" id="Tan-98-906"/>
+                            <constraint firstItem="u1j-hJ-f2q" firstAttribute="bottom" secondItem="OA6-lO-LSv" secondAttribute="bottom" constant="10" id="U9T-HX-xRC"/>
+                            <constraint firstItem="SvB-E5-Ad3" firstAttribute="trailing" secondItem="u1j-hJ-f2q" secondAttribute="trailing" constant="-8" id="Xz8-KW-z2f"/>
+                            <constraint firstItem="OA6-lO-LSv" firstAttribute="top" secondItem="SvB-E5-Ad3" secondAttribute="bottom" constant="10" id="wID-mR-QJj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u1j-hJ-f2q"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="OA6-lO-LSv" id="9CE-BP-4Oy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oU8-7g-YAP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="696" y="66"/>
+        </scene>
+        <!--Cover Operations View Controller-->
+        <scene sceneID="OWn-6v-gvd">
+            <objects>
+                <viewController storyboardIdentifier="CoverOperationsViewController" id="3GN-uL-Mdq" customClass="CoverOperationsViewController" customModule="SimpraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Azb-2e-Me1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SSV-6B-aBS">
+                                <rect key="frame" x="8" y="52" width="398" height="320"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dRc-Do-yiJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="220"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220" id="ucQ-lC-evD"/>
+                                        </constraints>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLe-mv-hwM" customClass="RoundedButton" customModule="SimpraApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="230" width="398" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ZEa-Qa-dLh"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Kuver Sayısını Güncelle"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isOrange" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWS-RG-box" customClass="RoundedButton" customModule="SimpraApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="280" width="398" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Ulb-38-Jpi"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SSV-6B-aBS" firstAttribute="leading" secondItem="lmV-QW-aTv" secondAttribute="leading" constant="8" id="9ta-ci-8ar"/>
+                            <constraint firstItem="SSV-6B-aBS" firstAttribute="top" secondItem="lmV-QW-aTv" secondAttribute="top" constant="8" id="J7Q-gd-vKE"/>
+                            <constraint firstItem="lmV-QW-aTv" firstAttribute="trailing" secondItem="SSV-6B-aBS" secondAttribute="trailing" constant="8" id="rAM-PU-0Fz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lmV-QW-aTv"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="dRc-Do-yiJ" id="AgC-ar-Yy7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PtW-tJ-6la" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462.3188405797102" y="95.758928571428569"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="food" width="27" height="27"/>
+        <image name="fork" width="27" height="27"/>
+    </resources>
 </document>
