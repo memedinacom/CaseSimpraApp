@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoverOperationCellTableViewCell" rowHeight="81" id="KGk-i7-Jjw" customClass="CoverOperationCellTableViewCell" customModule="SimpraApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="523" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="523" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7t-xU-OE0">
+                        <rect key="frame" x="0.0" y="15" width="523" height="46"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gf5-Af-G1p">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="46"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baby-boy" translatesAutoresizingMaskIntoConstraints="NO" id="SFs-nV-K6e">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="UGc-M9-NR8"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erkek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXH-nb-WRC">
+                                        <rect key="frame" x="40" y="0.0" width="0.0" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhf-oY-SzF">
+                                <rect key="frame" x="40" y="0.0" width="483" height="46"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="PgQ-LU-end">
+                                        <rect key="frame" x="340" y="0.0" width="143" height="46"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDL-hr-eYF" customClass="StepperButton" customModule="SimpraApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="46" id="JoF-qM-WQJ"/>
+                                                    <constraint firstAttribute="width" secondItem="gDL-hr-eYF" secondAttribute="height" multiplier="46:46" id="cxi-nh-qsb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="leftStepClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4bP-Lc-Cmn"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rd-SZ-BKv">
+                                                <rect key="frame" x="64" y="0.0" width="15" height="46"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9d-sB-Bhr" customClass="StepperButton" customModule="SimpraApp" customModuleProvider="target">
+                                                <rect key="frame" x="97" y="0.0" width="46" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="r9d-sB-Bhr" secondAttribute="height" multiplier="46:46" id="5md-DQ-Vaz"/>
+                                                    <constraint firstAttribute="width" constant="46" id="tlj-lD-0ng"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="righStepClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zE4-U9-Wyt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PgQ-LU-end" secondAttribute="bottom" id="FBT-3G-Gms"/>
+                                    <constraint firstItem="PgQ-LU-end" firstAttribute="top" secondItem="fhf-oY-SzF" secondAttribute="top" id="LqF-dn-w1n"/>
+                                    <constraint firstItem="PgQ-LU-end" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fhf-oY-SzF" secondAttribute="leading" priority="250" id="UWb-R8-92T"/>
+                                    <constraint firstAttribute="trailing" secondItem="PgQ-LU-end" secondAttribute="trailing" id="cGd-Ze-oAo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIZ-Jh-1ZE">
+                        <rect key="frame" x="0.0" y="75" width="523" height="1"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="oja-HU-6Tt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="V7t-xU-OE0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="4cD-lw-kTX"/>
+                    <constraint firstAttribute="trailing" secondItem="V7t-xU-OE0" secondAttribute="trailing" id="MGL-WZ-ndH"/>
+                    <constraint firstAttribute="bottom" secondItem="HIZ-Jh-1ZE" secondAttribute="bottom" id="SKI-r5-Ti9"/>
+                    <constraint firstAttribute="bottom" secondItem="V7t-xU-OE0" secondAttribute="bottom" constant="15" id="TXm-ak-e7t"/>
+                    <constraint firstItem="HIZ-Jh-1ZE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hSx-kX-0hX"/>
+                    <constraint firstAttribute="trailing" secondItem="HIZ-Jh-1ZE" secondAttribute="trailing" id="jUA-ZG-JpU"/>
+                    <constraint firstItem="V7t-xU-OE0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wih-9C-gHm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="countLabel" destination="5rd-SZ-BKv" id="e41-dE-ekH"/>
+                <outlet property="imgView" destination="SFs-nV-K6e" id="6Hh-jq-Ntd"/>
+                <outlet property="titleLabel" destination="eXH-nb-WRC" id="izT-53-8no"/>
+            </connections>
+            <point key="canvasLocation" x="68.840579710144937" y="98.102678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="baby-boy" width="512" height="512"/>
+    </resources>
+</document>
