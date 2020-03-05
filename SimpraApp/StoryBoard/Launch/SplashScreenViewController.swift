@@ -16,13 +16,33 @@ class SplashScreenViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.redirectLogin()
+        
+        guard let db = try? SimpraDB() else { return }
+        db.isValidDataEmployee() ? redirectLogin() : saveData()
     }
     
+    // MARK: - Saved employee data
+    func saveData(){
+        SimpraApi.employess.fetchs(decodable: EmployeeModel.self) { (data) in
+            guard let db = try? SimpraDB() else { return }
+            db.saveUserData(data)
+            self.redirectLogin()
+        }
+    }
+    
+    // MARK: - Fetch Data
+    func fetchData(){
+        SimpraApi.employess.fetchs(decodable: EmployeeModel.self) { (data) in
+            guard let db = try? SimpraDB() else { return }
+            db.saveUserData(data)
+        }
+    }
+    
+    // MARK: - Redirect Login
     func redirectLogin(){
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.1) {
             self.gotoLogin()
         }
     }
-
+    
 }
