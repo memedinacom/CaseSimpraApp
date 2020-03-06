@@ -23,6 +23,8 @@ class CoverOperationCellTableViewCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
+    
+    //Prepera UI CollecitonViewCell from Data
     func updateData(data:Any){
         if let item = data as? CoverModel{
             self.titleLabel.text = item.title
@@ -30,11 +32,13 @@ class CoverOperationCellTableViewCell: UITableViewCell {
         }
     }
     
+    //Right step click increate step number count +1
     @IBAction func righStepClick(_ sender: Any) {
         stepCount+=1
         self.countLabel.text = String(stepCount)
     }
     
+    //Left step click increate step number count +1
     @IBAction func leftStepClick(_ sender: Any) {
         stepCount = stepCount<1 ? 0:stepCount-1
         self.countLabel.text = String(stepCount)

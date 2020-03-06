@@ -14,8 +14,6 @@ import UIKit
         didSet {
             layer.borderColor = borderColor.cgColor
         }
-        
-       
     }
     @IBInspectable var selectedBorderColor: UIColor = UIColor.orange
     
@@ -32,7 +30,6 @@ import UIKit
         self.layer.cornerRadius = 10
         self.layer.borderWidth = 0.5
         self.borderStyle = UITextField.BorderStyle.none
-        //self.textAlignment = .center
         self.frame.size.height = 80
         self.delegate = self
         self.font = UIFont.helveticaNeue
@@ -46,13 +43,13 @@ import UIKit
         self.layer.borderWidth = 0.5
         self.selectedBorderColor = UIColor.orange1
         self.borderStyle = UITextField.BorderStyle.none
-        //self.textAlignment = .center
         self.delegate = self
         setLeftPaddingPoints(10)
         setRightPaddingPoints(10)
-        
     }
 }
+
+// MARK: - Extensions
 extension RoundedTextField : UITextFieldDelegate{
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if(isfirstCapitalLetter){
@@ -84,8 +81,6 @@ extension RoundedTextField : UITextFieldDelegate{
     }
 }
 extension UITextField {
-    
-    
     func setLeftPaddingPoints(_ amount:CGFloat){
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
         self.leftView = paddingView

@@ -46,6 +46,8 @@ class SimpraNotify{
         return EKNotificationMessageView(with: notificationMessage)
     }
     
+    
+    //Create UI for Push Message
     static func createSimpleMessage(title: String, description: String, image: UIImage?) -> EKSimpleMessage {
         let title = EKProperty.LabelContent(text: title, style: .init(font: .preferredFont(forTextStyle: .headline), color: .white))
         var description = EKProperty.LabelContent(text: description, style: .init(font: .preferredFont(forTextStyle: .body), color: .white))

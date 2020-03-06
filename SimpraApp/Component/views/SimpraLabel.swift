@@ -28,7 +28,6 @@ import UIKit
         heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
  
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
      
@@ -40,5 +39,4 @@ import UIKit
         prepareForInterfaceBuilder()
         
     }
-    
 }

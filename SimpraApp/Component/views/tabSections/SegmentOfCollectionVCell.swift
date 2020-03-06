@@ -29,6 +29,7 @@ class SegmentOfCollectionVCell: UICollectionViewCell {
     
     // MARK: - Functions
     
+    //prepare UI Cell from data
     func updateData(_ data:Any){
         self.itemData = data
         if let item = data as? SegmentItem{

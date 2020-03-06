@@ -47,6 +47,7 @@ class SegmentView: UIView, NibReusable {
     var typeOfSegment:SegmentType = .group
     weak var delegate: SegmentViewDelegate?
     var selectSubGorupIndex:Int = 0
+    
     // MARK: - Lifecyle
     
     convenience init(with _delegate: SegmentViewDelegate) {
@@ -68,6 +69,7 @@ class SegmentView: UIView, NibReusable {
         setup()
     }
     
+    //Collectionview Layout
     func flowCollectionView(){
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
@@ -75,6 +77,7 @@ class SegmentView: UIView, NibReusable {
     
     // MARK: - Functions
     
+    //Register Ceollectionview Nib
     func setup() {
         
         let nib = UINib(nibName: "SegmentOfCollectionVCell", bundle: nil)
@@ -86,10 +89,12 @@ class SegmentView: UIView, NibReusable {
         
     }
     
+    // MARK: - Configuration UI
     private func configurateView(data:SegmentItem){
         self.titleLabe.setTitle(data.title, for: .normal)
     }
     
+    // MARK: Fetch Data
     public func loadData(_ data:[Any],
                          type:SegmentType? = .group ,
                          completion: @escaping (_ isSucces:Bool) -> Void) {
@@ -102,8 +107,7 @@ class SegmentView: UIView, NibReusable {
     
 }
 
-
-
+// MARK: - Extensions
 extension SegmentView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     

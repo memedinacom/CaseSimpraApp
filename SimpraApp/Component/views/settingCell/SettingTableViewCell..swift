@@ -33,10 +33,12 @@ class SettingTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //Didselect Cell call delegate functions
     @objc func didSelectCell(){
         perDelegate.didSelectCell(dataCell)
     }
     
+    //Prepare UI from data
     func updateData(data:Any){
  
     }

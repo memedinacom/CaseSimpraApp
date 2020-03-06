@@ -29,7 +29,7 @@ class SubSegmentOfCollectionVCell: UICollectionViewCell {
     
     // MARK: - Functions
     
-    
+    //Prepare UICell from Data
     func updateData(_ data:Any){
         self.itemData = data
         if let item = data as? SubSegmentItem{

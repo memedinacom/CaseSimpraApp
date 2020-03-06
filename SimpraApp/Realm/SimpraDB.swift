@@ -20,7 +20,6 @@ class SimpraDB {
         
     }
     
-    
     //Employee save data
     func saveUserData(_ data: EmployeeModel){
         do {
@@ -34,6 +33,10 @@ class SimpraDB {
         }
     }
     
+    /*Kullanıcı kaydı varmı yokmu o Realmden okuyup count kontrolü yapıyor
+     Realm dosyasına ulaşamaz veya class datasını bulamazsa false döndürür.
+     Datayı bulup listede kayıt olmaması durumunda false döndürür
+     */
     func isValidDataEmployee()->Bool{
         do {
             guard let db = try? SimpraDB() else {return false}
@@ -53,59 +56,4 @@ class SimpraDB {
            }
            
        }
-
-//        func saveSection(_ section: Foo) throws {
-//            try realm.write {
-//                    realm.add(section, update: .all)
-//                
-//                
-//       
-//            }
-//        }
-//    
-//        func updateSection(_ section: SectionResponse) throws {
-//            try realm.write {
-//                realm.add(section, update: .modified)
-//            }
-//        }
-//        func getSection() -> Results<Group> {
-//            return realm.objects(Group.self)
-//          }
-     
-//
-////    func removeFavorite(_ movie: Movie) throws {
-////        try realm.write {
-////            guard let realmObject = realm.objects(RealmMovie.self).first(where: { realmMovie in
-////                return realmMovie.identifier == movie.identifier
-////            }) else { return }
-////            realm.delete(realmObject)
-////        }
-////    }
-//
-////    func getFavorites() -> [Movie] {
-////        return realm.objects(RealmMovie.self).map(fromRealm)
-////    }
-////
-//    private func toRealm(_ section: SectionResponseModel) -> Section {
-//        let uSection = section.sections
-//        
-//
-//        return uSection![0]
-//    }
-//
-//    private func fromRealm(_ movie: RealmMovie) -> Movie {
-//        return Movie(votes: movie.votes,
-//                     identifier: movie.identifier,
-//                     hasVideo: movie.hasVideo,
-//                     averageRating: movie.averageRating,
-//                     title: movie.title,
-//                     popularity: movie.popularity,
-//                     posterPath: movie.posterPath,
-//                     originalTitle: movie.originalTitle,
-//                     originalLanguage: movie.originalLanguage,
-//                     isAdult: movie.isAdult,
-//                     overview: movie.overview,
-//                     releaseDate: movie.releaseDate,
-//                     backdropPath: movie.backdropPath)
-//    }
 }

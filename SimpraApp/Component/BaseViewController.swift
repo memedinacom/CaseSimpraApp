@@ -20,6 +20,7 @@ class BaseViewController: UIViewController {
         self.navigationController?.navigationBar.backgroundColor = .darkGray
     }
     
+    // Goto Login ViewController
     func gotoLogin(){
         
         let rootViewController = UIApplication.shared.keyWindow!.rootViewController!
@@ -33,6 +34,7 @@ class BaseViewController: UIViewController {
         
     }
     
+    //Goto HomeViewController
     func goHome(){
         let rootViewController = UIApplication.shared.keyWindow!.rootViewController!
         rootViewController.view.removeFromSuperview()
@@ -42,9 +44,9 @@ class BaseViewController: UIViewController {
             //view.hideBackButton = true
             self.showRootViewController(view, inWindow: self.appDelegate.window!, isNavBar: true)
         })
-        
     }
     
+    //RootViewController
     func showRootViewController(_ viewController: UIViewController, inWindow: UIWindow, isNavBar:Bool ) {
         navigationControllers.viewControllers = [viewController]
         inWindow.rootViewController = navigationControllers
