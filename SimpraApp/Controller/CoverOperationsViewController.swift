@@ -23,13 +23,15 @@ class CoverOperationsViewController: BaseViewController {
         self.loadData()
         self.tableView.reloadData()
     }
+    
+    // MARK: Fetch Data
     func loadData(){
         self.list.append(CoverModel(title: "Kadın", image: UIImage(named: "female")))
         self.list.append(CoverModel(title: "Erkek", image: UIImage(named: "male")))
         self.list.append(CoverModel(title: "Çocuk", image: UIImage(named: "baby")))
     }
     
-    
+    //Configuraiton View Controller
     func configurationVc(){
         tableView.estimatedRowHeight = 120
         tableView.rowHeight = UITableView.automaticDimension
@@ -43,6 +45,8 @@ class CoverOperationsViewController: BaseViewController {
     
 }
 
+
+// MARK: - Extensions
 extension CoverOperationsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -36,7 +36,6 @@ class FastFoodViewController: UIViewController {
         
     }
     
-    
     // MARK: - Create Dummy Data
     fileprivate func fetchData(){
         SimpraApi.products.fetchs(type: ProductResponseModel.self) { [weak self] (response, error) in
@@ -96,11 +95,13 @@ class FastFoodViewController: UIViewController {
         }
     }
     
+    //Prepare UI for Viewcontroller
     private func prepareUI(){
         self.setupNavigationBarItems()
         self.view.backgroundColor = UIColor.lightGray
     }
     
+    //Configuraiton View Controller
     private func configure() {
         self.segmentView.delegate = self
         self.subSegmentView.delegate = self
@@ -111,6 +112,7 @@ class FastFoodViewController: UIViewController {
         collectionView.allowsMultipleSelection = true
     }
     
+    //Sort Product Lise with group id like Fast Food  , Hot Drink , Cold Drink
     func sortProduct(_ groupId:String) -> [MenuItem]{
         var arr = DataManager.sharedInstance.productModel?.menuItems
         
@@ -119,12 +121,10 @@ class FastFoodViewController: UIViewController {
         })
         
         return arr ?? []
-    }
-    
-    
-    
+    }   
 }
 
+// MARK: Extensions
 extension FastFoodViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, ProductPreviewCellDelegate {
     func didSelectPost(with id: String) {
         

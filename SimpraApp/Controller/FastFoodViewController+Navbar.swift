@@ -10,18 +10,22 @@ import Foundation
 import UIKit
 extension FastFoodViewController {
     
+    
+    //Func setup all navigaiton item
     func setupNavigationBarItems() {
         setupLeftNavItem()
         setupRightNavItems()
         setupRemainingNavItems()
     }
     
+    //Setup navigaiton bar
     private func setupRemainingNavItems() {
         navigationController?.navigationBar.backgroundColor = .darkGray
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barTintColor = UIColor.navGrey
     }
     
+    //NAvigaiton bar item
     private func setupLeftNavItem() {
         let followButton = UIButton(type: .system)
         followButton.setImage(#imageLiteral(resourceName: "plus").withRenderingMode(.alwaysTemplate), for: .normal)
@@ -39,6 +43,7 @@ extension FastFoodViewController {
                                              UIBarButtonItem(customView: addTicket)]
     }
     
+    //Navigaiton Bar İtem
     private func setupRightNavItems() {
         let searchButton = UIButton(type: .system)
         searchButton.setImage(#imageLiteral(resourceName: "more").withRenderingMode(.alwaysTemplate), for: .normal)
@@ -46,7 +51,6 @@ extension FastFoodViewController {
         searchButton.tintColor = UIColor.coolGrey
         
         let composeButton = UIButton(type: .system)
-        //composeButton.setImage(#imageLiteral(resourceName: "settings").withRenderingMode(.alwaysTemplate), for: .normal)
         composeButton.setTitle("AU", for: .normal)
         composeButton.titleLabel?.font = UIFont.helveticaNeueBold
         composeButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
@@ -55,10 +59,13 @@ extension FastFoodViewController {
         
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: composeButton), UIBarButtonItem(customView: searchButton)]
     }
+
+    //Ayarlar Sayfası
     @objc func goToSetting(){
         performSegue(withIdentifier: ViewControllerSegue.FastFoodToSetting.rawValue, sender: nil)
     }
     
+    //ViewController Popup açılması
     @IBAction func showPopoverButtonAction(_ sender: Any) {
         //get the button frame
         /* 1 */
@@ -82,6 +89,7 @@ extension FastFoodViewController {
     }
 }
 
+// MARK: Extensions
 extension FastFoodViewController:UIPopoverPresentationControllerDelegate{
     //UIPopoverPresentationControllerDelegate inherits from UIAdaptivePresentationControllerDelegate, we will use this method to define the presentation style for popover presentation controller
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {

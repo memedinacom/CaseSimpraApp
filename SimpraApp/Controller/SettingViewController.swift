@@ -18,23 +18,26 @@ class SettingViewController: BaseViewController {
         self.configurationVc()
     }
     
+    //Configuration Viewc Controller
     func configurationVc(){
-        tableView.estimatedRowHeight = 120
-        tableView.rowHeight = UITableView.automaticDimension
-        
-        tableView.register(UINib(nibName:"SettingTableViewCell", bundle: nil), forCellReuseIdentifier: "SettingTableViewCell")
-        
-        tableView.separatorColor = UIColor.lightText
+        tableView.map {
+            $0.estimatedRowHeight = 120
+            $0.rowHeight = UITableView.automaticDimension
+            $0.register(UINib(nibName:"SettingTableViewCell", bundle: nil), forCellReuseIdentifier: "SettingTableViewCell")
+            $0.separatorColor = UIColor.lightText
+        }
     }
-    
-   
+         
 }
+
+ // MARK: - Protocol
 extension SettingViewController:SettingTableViewCellDelegate{
     func didSelectCell(_ data: Any) {
-            
+            //TODO:SegmentView
         }
 }
 
+ // MARK: - UITableView Delegate
 extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,7 +46,6 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingTableViewCell", for: indexPath) as! SettingTableViewCell
-        //cell.setUI(type: .withButton)
         cell.perDelegate = self
 
         return cell;
@@ -51,8 +53,4 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 
-
-// MARK: - Properties
-// MARK: - Functions
-// MARK: - Actions
 

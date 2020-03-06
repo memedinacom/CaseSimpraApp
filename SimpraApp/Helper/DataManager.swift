@@ -25,8 +25,5 @@ open class  DataManager {
     
     // MARK: - HotDrink
     //**TWVudUl0ZW1Hcm91cC01MWNkZGQ5Zi01OGQ5LTRmZWMtYTRiNy03YTRlYmVjZjc3MGY**/
-    
-  
-    
-   
+         
 }
