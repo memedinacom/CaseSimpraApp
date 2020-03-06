@@ -62,7 +62,6 @@
 		7A8CE58C240B245F000E5AD2 /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE58B240B245F000E5AD2 /* StoryBoard.swift */; };
 		7A8CE58E240B2527000E5AD2 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE58D240B2527000E5AD2 /* UIViewController.swift */; };
 		7ACCA42E2409934300150248 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 7ACCA42D2409934300150248 /* default.realm */; };
-		7ACCA4342409AF1600150248 /* ArrayTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4332409AF1600150248 /* ArrayTransform.swift */; };
 		7ACCA4442409EC3300150248 /* SectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4422409EC3300150248 /* SectionResponse.swift */; };
 		7ACCA4452409EC3300150248 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4432409EC3300150248 /* Section.swift */; };
 		7ACCA44B2409EC7F00150248 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4472409EC7E00150248 /* Group.swift */; };
@@ -136,7 +135,6 @@
 		7A8CE58B240B245F000E5AD2 /* StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
 		7A8CE58D240B2527000E5AD2 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		7ACCA42D2409934300150248 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
-		7ACCA4332409AF1600150248 /* ArrayTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTransform.swift; sourceTree = "<group>"; };
 		7ACCA4422409EC3300150248 /* SectionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionResponse.swift; sourceTree = "<group>"; };
 		7ACCA4432409EC3300150248 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		7ACCA4472409EC7E00150248 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
@@ -207,25 +205,35 @@
 			path = "Realm-Codable";
 			sourceTree = "<group>";
 		};
-		7A7151CB24126FC90013CBC1 /* data */ = {
+		7A7151CB24126FC90013CBC1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				7ACCA42D2409934300150248 /* default.realm */,
 				7A8CE574240B151A000E5AD2 /* simpra-liquid-loading.json */,
 			);
-			path = data;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7A7151CC241270700013CBC1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7AEFE48F2408301700688933 /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		7A878D982408378C00DA473B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7A878DB024085C9F00DA473B /* Enums.swift */,
 				7A7151C12410EFB90013CBC1 /* Realm-Codable */,
 				7A8CE550240B05D0000E5AD2 /* ActionResponseModel */,
-				7A8CE54D240B05D0000E5AD2 /* discountResponse */,
+				7A8CE54D240B05D0000E5AD2 /* DiscountResponse */,
 				7A8CE54A240B05D0000E5AD2 /* EmployeesResponseModel */,
 				7A8CE558240B05D0000E5AD2 /* ProductResponse */,
 				7A8CE554240B05D0000E5AD2 /* TablesResponseModel */,
 				7ACCA4462409EC7400150248 /* GroupdResponse */,
-				7ACCA4362409EB1300150248 /* sectionResponse */,
+				7ACCA4362409EB1300150248 /* SectionResponse */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,13 +255,13 @@
 			path = EmployeesResponseModel;
 			sourceTree = "<group>";
 		};
-		7A8CE54D240B05D0000E5AD2 /* discountResponse */ = {
+		7A8CE54D240B05D0000E5AD2 /* DiscountResponse */ = {
 			isa = PBXGroup;
 			children = (
 				7A8CE54E240B05D0000E5AD2 /* Discount.swift */,
 				7A8CE54F240B05D0000E5AD2 /* DiscountResponseModel.swift */,
 			);
-			path = discountResponse;
+			path = DiscountResponse;
 			sourceTree = "<group>";
 		};
 		7A8CE550240B05D0000E5AD2 /* ActionResponseModel */ = {
@@ -289,7 +297,6 @@
 			isa = PBXGroup;
 			children = (
 				7A8CE57B240B1B4D000E5AD2 /* views */,
-				7A8CE56F240B12F8000E5AD2 /* BaseViewController.swift */,
 				7A7151B5241036E50013CBC1 /* StepperButton.swift */,
 				7A42F301240EE7C0009B94A2 /* SettingButton.swift */,
 				7A7151C4241123930013CBC1 /* SimpraNotify.swift */,
@@ -300,6 +307,7 @@
 		7A8CE56A240B1165000E5AD2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				7A878DA624085A6500DA473B /* Realm */,
 				7A42F2E2240B2D06009B94A2 /* DataManager.swift */,
 			);
 			path = Helper;
@@ -318,6 +326,7 @@
 		7A8CE576240B1996000E5AD2 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				7A7151CC241270700013CBC1 /* Main */,
 				7A8CE586240B22EE000E5AD2 /* Launch */,
 				7A8CE577240B19A2000E5AD2 /* Login */,
 			);
@@ -335,6 +344,9 @@
 		7A8CE57A240B1A53000E5AD2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7A8CE56F240B12F8000E5AD2 /* BaseViewController.swift */,
+				7A8CE588240B2365000E5AD2 /* SplashScreenViewController.swift */,
+				7AEFE48B2408301700688933 /* AppDelegate.swift */,
 				7A8CE56D240B12B9000E5AD2 /* LoginViewController.swift */,
 				7AEFE48D2408301700688933 /* FastFoodViewController.swift */,
 				7A42F2E4240B31FA009B94A2 /* FastFoodViewController+Navbar.swift */,
@@ -386,18 +398,17 @@
 			isa = PBXGroup;
 			children = (
 				7A8CE587240B2364000E5AD2 /* SplashScreen.storyboard */,
-				7A8CE588240B2365000E5AD2 /* SplashScreenViewController.swift */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
 		};
-		7ACCA4362409EB1300150248 /* sectionResponse */ = {
+		7ACCA4362409EB1300150248 /* SectionResponse */ = {
 			isa = PBXGroup;
 			children = (
 				7ACCA4432409EC3300150248 /* Section.swift */,
 				7ACCA4422409EC3300150248 /* SectionResponse.swift */,
 			);
-			path = sectionResponse;
+			path = SectionResponse;
 			sourceTree = "<group>";
 		};
 		7ACCA4462409EC7400150248 /* GroupdResponse */ = {
@@ -432,25 +443,19 @@
 		7AEFE48A2408301700688933 /* SimpraApp */ = {
 			isa = PBXGroup;
 			children = (
-				7A7151CB24126FC90013CBC1 /* data */,
+				7A7151CB24126FC90013CBC1 /* Data */,
 				7A8CE57E240B1BB6000E5AD2 /* Extensions */,
 				7A8CE57A240B1A53000E5AD2 /* Controller */,
 				7A8CE576240B1996000E5AD2 /* StoryBoard */,
 				7A8CE571240B14B4000E5AD2 /* Protocol */,
 				7A8CE56A240B1165000E5AD2 /* Helper */,
 				7A8CE569240B1158000E5AD2 /* Component */,
-				7ACCA42D2409934300150248 /* default.realm */,
-				7A878DB024085C9F00DA473B /* Enums.swift */,
-				7A878DA624085A6500DA473B /* Realm */,
 				7A878D982408378C00DA473B /* Model */,
 				7AEFE4A02408314500688933 /* Network */,
-				7AEFE48B2408301700688933 /* AppDelegate.swift */,
-				7AEFE48F2408301700688933 /* Main.storyboard */,
 				7AEFE4952408301900688933 /* Assets.xcassets */,
 				7AEFE4972408301900688933 /* LaunchScreen.storyboard */,
 				7AEFE49A2408301900688933 /* Info.plist */,
 				7AEFE4922408301700688933 /* SimpraApp.xcdatamodeld */,
-				7ACCA4332409AF1600150248 /* ArrayTransform.swift */,
 			);
 			path = SimpraApp;
 			sourceTree = "<group>";
@@ -611,7 +616,6 @@
 				7A42F308240EFD46009B94A2 /* CoverOperationsViewController.swift in Sources */,
 				7A42F2F4240BE6BA009B94A2 /* NibLoadable.swift in Sources */,
 				7A8CE561240B05D0000E5AD2 /* ActionResponseModel.swift in Sources */,
-				7ACCA4342409AF1600150248 /* ArrayTransform.swift in Sources */,
 				7A7151C32410EFC20013CBC1 /* EmployeeModel.swift in Sources */,
 				7AEFE4A22408315E00688933 /* NetworkManager.swift in Sources */,
 				7A8CE58A240B2365000E5AD2 /* SplashScreenViewController.swift in Sources */,
