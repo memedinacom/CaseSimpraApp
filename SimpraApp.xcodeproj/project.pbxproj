@@ -62,7 +62,6 @@
 		7A8CE58C240B245F000E5AD2 /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE58B240B245F000E5AD2 /* StoryBoard.swift */; };
 		7A8CE58E240B2527000E5AD2 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE58D240B2527000E5AD2 /* UIViewController.swift */; };
 		7ACCA42E2409934300150248 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 7ACCA42D2409934300150248 /* default.realm */; };
-		7ACCA4322409A97900150248 /* cars.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ACCA4312409A97900150248 /* cars.json */; };
 		7ACCA4342409AF1600150248 /* ArrayTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4332409AF1600150248 /* ArrayTransform.swift */; };
 		7ACCA4442409EC3300150248 /* SectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4422409EC3300150248 /* SectionResponse.swift */; };
 		7ACCA4452409EC3300150248 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCA4432409EC3300150248 /* Section.swift */; };
@@ -137,7 +136,6 @@
 		7A8CE58B240B245F000E5AD2 /* StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
 		7A8CE58D240B2527000E5AD2 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		7ACCA42D2409934300150248 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
-		7ACCA4312409A97900150248 /* cars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cars.json; sourceTree = "<group>"; };
 		7ACCA4332409AF1600150248 /* ArrayTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTransform.swift; sourceTree = "<group>"; };
 		7ACCA4422409EC3300150248 /* SectionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionResponse.swift; sourceTree = "<group>"; };
 		7ACCA4432409EC3300150248 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -207,6 +205,14 @@
 				7A7151C22410EFC20013CBC1 /* EmployeeModel.swift */,
 			);
 			path = "Realm-Codable";
+			sourceTree = "<group>";
+		};
+		7A7151CB24126FC90013CBC1 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				7A8CE574240B151A000E5AD2 /* simpra-liquid-loading.json */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 		7A878D982408378C00DA473B /* Model */ = {
@@ -426,14 +432,13 @@
 		7AEFE48A2408301700688933 /* SimpraApp */ = {
 			isa = PBXGroup;
 			children = (
+				7A7151CB24126FC90013CBC1 /* data */,
 				7A8CE57E240B1BB6000E5AD2 /* Extensions */,
 				7A8CE57A240B1A53000E5AD2 /* Controller */,
 				7A8CE576240B1996000E5AD2 /* StoryBoard */,
-				7A8CE574240B151A000E5AD2 /* simpra-liquid-loading.json */,
 				7A8CE571240B14B4000E5AD2 /* Protocol */,
 				7A8CE56A240B1165000E5AD2 /* Helper */,
 				7A8CE569240B1158000E5AD2 /* Component */,
-				7ACCA4312409A97900150248 /* cars.json */,
 				7ACCA42D2409934300150248 /* default.realm */,
 				7A878DB024085C9F00DA473B /* Enums.swift */,
 				7A878DA624085A6500DA473B /* Realm */,
@@ -541,7 +546,6 @@
 				7AEFE4962408301900688933 /* Assets.xcassets in Resources */,
 				7A42F2EB240BE5BC009B94A2 /* SegmentView.xib in Resources */,
 				7A42F306240EF3C1009B94A2 /* SettingTableViewCell.xib in Resources */,
-				7ACCA4322409A97900150248 /* cars.json in Resources */,
 				7ACCA42E2409934300150248 /* default.realm in Resources */,
 				7A42F2EF240BE5D9009B94A2 /* SegmentOfCollectionVCell.xib in Resources */,
 				7A7151B0240F9F900013CBC1 /* CoverOperationCellTableViewCell.xib in Resources */,
