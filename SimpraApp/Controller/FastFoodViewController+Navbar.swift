@@ -10,56 +10,72 @@ import Foundation
 import UIKit
 extension FastFoodViewController {
     
-    
     //Func setup all navigaiton item
     func setupNavigationBarItems() {
-        setupLeftNavItem()
-        setupRightNavItems()
+        if selectData != nil{
+            self.closeButton(title: selectData?.name ?? "Masa")
+            self.setupRightNavItems()
+        }else{
+            setupLeftNavItem()
+            setupRightNavItems()
+        }
+        
         setupRemainingNavItems()
     }
     
-    //Setup navigaiton bar
-    private func setupRemainingNavItems() {
-        navigationController?.navigationBar.backgroundColor = .darkGray
-        navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.barTintColor = UIColor.navGrey
-    }
     
     //NAvigaiton bar item
     private func setupLeftNavItem() {
-        let followButton = UIButton(type: .system)
-        followButton.setImage(#imageLiteral(resourceName: "plus").withRenderingMode(.alwaysTemplate), for: .normal)
-        followButton.tintColor = UIColor.coolGrey
-        followButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: followButton)
-        followButton.addTarget(self, action: #selector(showPopoverButtonAction), for: .touchUpInside)
-
-        let addTicket = UIButton(type: .system)
-        addTicket.setImage(#imageLiteral(resourceName: "add").withRenderingMode(.alwaysTemplate), for: .normal)
-        addTicket.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
-        addTicket.tintColor = UIColor.coolGrey
         
-        navigationItem.leftBarButtonItems = [UIBarButtonItem(customView: followButton),
-                                             UIBarButtonItem(customView: addTicket)]
+        let plusButton = SimpraBarButtonItem()
+        plusButton.button.imagePath = "plus"
+        plusButton.button.actionHandler = {[weak self] in
+            self?.showPopoverButtonAction(plusButton)
+        }
+        
+        
+        let addTicket = SimpraBarButtonItem()
+        addTicket.button.imagePath = "add"
+        addTicket.button.actionHandler = {[weak self] in
+            self?.showPopoverButtonAction(addTicket)
+        }
+        
+        navigationItem.leftBarButtonItems = [plusButton , addTicket]
     }
     
     //Navigaiton Bar İtem
     private func setupRightNavItems() {
-        let searchButton = UIButton(type: .system)
-        searchButton.setImage(#imageLiteral(resourceName: "more").withRenderingMode(.alwaysTemplate), for: .normal)
-        searchButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
-        searchButton.tintColor = UIColor.coolGrey
         
-        let composeButton = UIButton(type: .system)
-        composeButton.setTitle("AU", for: .normal)
-        composeButton.titleLabel?.font = UIFont.helveticaNeueBold
-        composeButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
-        composeButton.tintColor = UIColor.coolGrey
-        composeButton.addTarget(self, action: #selector(goToSetting), for: .touchUpInside)
-        
-        navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: composeButton), UIBarButtonItem(customView: searchButton)]
+        let composeButton = SimpraBarButtonItem()
+        composeButton.button.titleString = " AU"
+        composeButton.button.actionHandler = {[weak self] in
+            self?.goToSetting()
+        }
+        navigationItem.rightBarButtonItems = [composeButton]
     }
+    
+    func closeButton(title:String){
+        
+        let closeButton = SimpraBarButtonItem()
+        closeButton.button.imagePath = "close"
+        closeButton.button.actionHandler = {[weak self] in
+            self?.dismisViewController()
+        }
+        
+        let titleButton = SimpraBarButtonItem()
+        titleButton.button.titleString = title
+        titleButton.button.titleLabel?.font = .helveticaNeueBold15
+        titleButton.button.actionHandler = {[weak self] in
+            self?.dismisViewController()
+        }
 
+        navigationItem.leftBarButtonItems = [ closeButton,titleButton]
+    }
+    
+    @objc func dismisViewController(){
+        self.navigationController?.popViewController(animated: false)
+    }
+    
     //Ayarlar Sayfası
     @objc func goToSetting(){
         performSegue(withIdentifier: ViewControllerSegue.FastFoodToSetting.rawValue, sender: nil)
@@ -83,7 +99,7 @@ extension FastFoodViewController {
             popoverPresentationController.sourceView = self.view
             popoverPresentationController.sourceRect = buttonFrame
             popoverPresentationController.delegate = self
-                present(popoverContentController, animated: true, completion: nil)
+            present(popoverContentController, animated: true, completion: nil)
             
         }
     }
@@ -91,7 +107,7 @@ extension FastFoodViewController {
 
 // MARK: Extensions
 extension FastFoodViewController:UIPopoverPresentationControllerDelegate{
-    //UIPopoverPresentationControllerDelegate inherits from UIAdaptivePresentationControllerDelegate, we will use this method to define the presentation style for popover presentation controller
+    
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return .none
     }

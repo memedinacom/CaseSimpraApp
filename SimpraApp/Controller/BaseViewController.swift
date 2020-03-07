@@ -46,6 +46,35 @@ class BaseViewController: UIViewController {
         })
     }
     
+    func goRestoranViewController(){
+        let rootViewController = UIApplication.shared.keyWindow!.rootViewController!
+        rootViewController.view.removeFromSuperview()
+        rootViewController.dismiss(animated: false, completion: {
+            
+            let view = RestoranViewController.instantiate(fromAppStoryboard: .Main)
+            //view.hideBackButton = true
+            self.showRootViewController(view, inWindow: self.appDelegate.window!, isNavBar: true)
+        })
+    }
+    
+    func goFastFoodViewController(selectTable data:Table? = nil){
+        let rootViewController = UIApplication.shared.keyWindow!.rootViewController!
+        rootViewController.view.removeFromSuperview()
+        rootViewController.dismiss(animated: false, completion: {
+    
+            let view = FastFoodViewController.instantiate(fromAppStoryboard: .Main)
+            view.selectData = data
+            self.showRootViewController(view, inWindow: self.appDelegate.window!, isNavBar: true)
+        })
+    }
+    
+    //Setup navigaiton bar
+       func setupRemainingNavItems() {
+          navigationController?.navigationBar.backgroundColor = .darkGray
+          navigationController?.navigationBar.isTranslucent = false
+          navigationController?.navigationBar.barTintColor = UIColor.navGrey
+      }
+    
     //RootViewController
     func showRootViewController(_ viewController: UIViewController, inWindow: UIWindow, isNavBar:Bool ) {
         navigationControllers.viewControllers = [viewController]
