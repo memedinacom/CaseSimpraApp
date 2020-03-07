@@ -14,6 +14,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "RestoranViewController.openSearchController():RestoranViewController+Navbar.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController?">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in RestoranViewController.sortProduct():RestoranViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -73,25 +81,42 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "RestoranViewController.sortProduct(_:):RestoranViewController.swift">
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in SimpraApi.getCars&lt;A&gt;(type:success:fail:):NetworkManager.swift">
       </ContextState>
       <ContextState
          contextName = "SegmentView.collectionView(_:numberOfItemsInSection:):SegmentView.swift">
       </ContextState>
       <ContextState
-         contextName = "RestoranViewController.viewDidLoad():RestoranViewController.swift">
-      </ContextState>
-      <ContextState
          contextName = "SectionResponseModel.mapping(map:):SectionResponseModel.swift">
       </ContextState>
       <ContextState
-         contextName = "RestoranViewController.sortProduct(_:):RestoranViewController.swift">
+         contextName = "RestoranViewController.viewDidLoad():RestoranViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SearchTableViewController.collectionView(_:cellForItemAt:):SearchTableViewController.swift">
       </ContextState>
       <ContextState
          contextName = "RestoranViewController.sortProduct():RestoranViewController.swift">
       </ContextState>
       <ContextState
+         contextName = "TableCollectionsCell.setup(_:post:):TableCollectionsCell.swift">
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in SimpraApiType.fetch():NetworkManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SearchTableViewController.filterContentForSearchText(text:):SearchTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "filteredDataList">
+            </PersistentString>
+            <PersistentString
+               value = "isFiltering">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "closure #2 in ViewController.viewDidLoad():ViewController.swift">
