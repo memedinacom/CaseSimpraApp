@@ -3,13 +3,7 @@ PODS:
   - AlamofireObjectMapper (5.2.1):
     - Alamofire (~> 4.7)
     - ObjectMapper (~> 3.4)
-  - CELLULAR/Locking (4.1.0)
-  - CELLULAR/Result (4.1.0)
-  - CellularLocalStorage (4.2.0):
-    - CellularLocalStorage/Core (= 4.2.0)
-  - CellularLocalStorage/Core (4.2.0):
-    - CELLULAR/Locking (~> 4.1.0)
-    - CELLULAR/Result (~> 4.1.0)
+  - EmptyDataSet-Swift (5.0.0)
   - IQKeyboardManagerSwift (6.5.5)
   - lottie-ios (3.1.6)
   - ObjectMapper (3.5.1)
@@ -21,25 +15,21 @@ PODS:
     - Realm (= 4.3.2)
   - SwiftEntryKit (1.1.4):
     - QuickLayout (= 3.0.0)
-  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - AlamofireObjectMapper
-  - CellularLocalStorage
+  - EmptyDataSet-Swift
   - IQKeyboardManagerSwift
   - lottie-ios
-  - ObjectMapper
   - RealmSwift (~> 4.3.2)
   - SwiftEntryKit (~> 1.1.4)
-  - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireObjectMapper
-    - CELLULAR
-    - CellularLocalStorage
+    - EmptyDataSet-Swift
     - IQKeyboardManagerSwift
     - lottie-ios
     - ObjectMapper
@@ -47,13 +37,11 @@ SPEC REPOS:
     - Realm
     - RealmSwift
     - SwiftEntryKit
-    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
-  CELLULAR: 6af608774a6d7fed3a77b998aac37e5c6750beec
-  CellularLocalStorage: a602d529be743e482d7eba48b8ed4f9d9d94ae3d
+  EmptyDataSet-Swift: eb382c0c87a2d9c678077385a595cec52da38171
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
@@ -61,8 +49,7 @@ SPEC CHECKSUMS:
   Realm: 5e92902e2875dff4bb0fd02f67bb737c3d5db2bc
   RealmSwift: 9a360fc7bae04fc2e308a34fbd899d5faa2d6b22
   SwiftEntryKit: fa997eb1c45afb5cf27ab0145e680759dd7152ca
-  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: ef93627f24488547cbe9b7209144b821aac79e7b
+PODFILE CHECKSUM: 32d78e466b37f51073c60b679ad73bd9794d6590
 
 COCOAPODS: 1.8.4

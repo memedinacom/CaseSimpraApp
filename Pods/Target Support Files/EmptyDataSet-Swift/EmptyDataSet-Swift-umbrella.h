@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double CELLULARVersionNumber;
-FOUNDATION_EXPORT const unsigned char CELLULARVersionString[];
+FOUNDATION_EXPORT double EmptyDataSet_SwiftVersionNumber;
+FOUNDATION_EXPORT const unsigned char EmptyDataSet_SwiftVersionString[];
 

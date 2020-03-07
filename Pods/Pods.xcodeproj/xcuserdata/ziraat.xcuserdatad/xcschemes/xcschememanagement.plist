@@ -14,12 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>CELLULAR.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>CellularLocalStorage.xcscheme</key>
+		<key>EmptyDataSet-Swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -55,11 +50,6 @@
 			<false/>
 		</dict>
 		<key>SwiftEntryKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

@@ -7,12 +7,10 @@ target 'SimpraApp' do
 
   # Pods for SimpraApp
 pod 'Alamofire', '~> 4.0'
-pod 'ObjectMapper'
 pod 'RealmSwift', '~> 4.3.2'
-pod 'SwiftyJSON'
 pod 'AlamofireObjectMapper'
-pod "CellularLocalStorage"
 pod 'lottie-ios'
 pod 'IQKeyboardManagerSwift'
 pod 'SwiftEntryKit', '~> 1.1.4'
+pod 'EmptyDataSet-Swift'
 end
