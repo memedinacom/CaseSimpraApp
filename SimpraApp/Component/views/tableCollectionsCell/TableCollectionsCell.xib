@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TableCollectionsCell" id="gTV-IL-0wX" customClass="TableCollectionsCell" customModule="SimpraApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="272" height="258"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="272" height="258"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QU0-J3-eZs">
+                        <rect key="frame" x="0.0" y="0.0" width="272" height="258"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="didSelect" destination="gTV-IL-0wX" eventType="touchUpInside" id="OvB-Ph-rAl"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QU0-J3-eZs" secondAttribute="bottom" id="FVO-dz-S7b"/>
+                <constraint firstAttribute="trailing" secondItem="QU0-J3-eZs" secondAttribute="trailing" id="RxU-Fg-GGK"/>
+                <constraint firstItem="QU0-J3-eZs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lFu-Vz-zBx"/>
+                <constraint firstItem="QU0-J3-eZs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vs1-Iu-Qgm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="272" height="258"/>
+            <connections>
+                <outlet property="titleButton" destination="QU0-J3-eZs" id="YNa-UK-kJn"/>
+            </connections>
+            <point key="canvasLocation" x="298.55072463768118" y="153.34821428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>
