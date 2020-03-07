@@ -7,6 +7,15 @@
 //
 
 import Foundation
+
+// MARK: - UITABLEVİEWCELL REUSE ID
+public let PRODUCT_PREVIEW_CELL = "ProductPreviewCell"
+public let SETTING_TABLEVIEW_CELL = "SettingTableViewCell"
+public let TABLE_COLLECTIONS_CELL = "TableCollectionsCell"
+public let COVER_OPERATIONCELL_TABLEVIEW_CELL = "CoverOperationCellTableViewCell"
+public let SEGMENT_OF_COLLECTION_VCELL = "SegmentOfCollectionVCell"
+public let SUBSEGMENT_OF_COLLECTION_VCELL = "SubSegmentOfCollectionVCell"
+
 public enum SegmentProductId :String{
     case coldDrink = "TWVudUl0ZW1Hcm91cC0zZTdjYmQyMC04ZGFjLTQ4MjMtOTdjOC05NzRmOGQ4MGNkMzM="
     case hotDrink = "TWVudUl0ZW1Hcm91cC01MWNkZGQ5Zi01OGQ5LTRmZWMtYTRiNy03YTRlYmVjZjc3MGY="
@@ -17,5 +26,12 @@ public enum SegmentProductId :String{
 }
 
 enum ViewControllerSegue: String {
-     case FastFoodToSetting = "FastFoodToSetting"
- }
+    case FastFoodToSetting = "FastFoodToSetting"
+    case SettingToShowRestoranController = "SettingToShowRestoranController"
+    case RestorantToSetting = "RestorantToSetting"
+    case SearchToFastFood = "SearchToFastFood"
+    case SearchToRestaurant = "SearchToRestaurant"
+    case RestoranToFastFood = "RestoranToFastFood"
+}
+
+
