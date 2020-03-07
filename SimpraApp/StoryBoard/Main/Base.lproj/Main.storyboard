@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="FastFoodViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FastFoodViewController" customModule="SimpraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9oe-gJ-Vyz">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MKg-xY-xsr">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
@@ -40,7 +40,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="L8L-nC-LOy">
-                                        <rect key="frame" x="0.0" y="130" width="414" height="722"/>
+                                        <rect key="frame" x="0.0" y="130" width="414" height="712"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1pe-nX-yCZ">
                                             <size key="itemSize" width="50" height="50"/>
@@ -75,6 +75,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="4ch-Xn-Fsb"/>
                     <connections>
                         <outlet property="collectionView" destination="L8L-nC-LOy" id="XGC-PW-QLR"/>
                         <outlet property="segmentView" destination="Zqg-BI-oz2" id="s4k-hL-Gk3"/>
@@ -89,7 +90,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-107.24637681159422" y="66.964285714285708"/>
+            <point key="canvasLocation" x="1451" y="755"/>
+        </scene>
+        <!--Restoran View Controller-->
+        <scene sceneID="W21-c8-FSk">
+            <objects>
+                <viewController storyboardIdentifier="RestoranViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y8a-dR-dSR" customClass="RestoranViewController" customModule="SimpraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GdJ-u2-jwz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v5j-RC-9jC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DMh-Xc-URM" firstAttribute="bottom" secondItem="v5j-RC-9jC" secondAttribute="bottom" id="BHO-jq-lb7"/>
+                            <constraint firstItem="DMh-Xc-URM" firstAttribute="trailing" secondItem="v5j-RC-9jC" secondAttribute="trailing" id="ngP-EB-9bz"/>
+                            <constraint firstItem="v5j-RC-9jC" firstAttribute="top" secondItem="DMh-Xc-URM" secondAttribute="top" id="nrk-Y8-qUi"/>
+                            <constraint firstItem="v5j-RC-9jC" firstAttribute="leading" secondItem="DMh-Xc-URM" secondAttribute="leading" id="oPK-Cc-Ynu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DMh-Xc-URM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sbH-if-rfR"/>
+                    <connections>
+                        <outlet property="tableView" destination="v5j-RC-9jC" id="cul-rq-Dra"/>
+                        <segue destination="G9k-sm-Jue" kind="popoverPresentation" identifier="RestorantToSetting" popoverAnchorView="GdJ-u2-jwz" id="QTs-WT-Fuq">
+                            <popoverArrowDirection key="popoverArrowDirection" right="YES"/>
+                        </segue>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="RestoranToFastFood" id="uwC-vW-jLL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oyZ-IB-azO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="723" y="755"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="uBv-vQ-oPO">
@@ -131,6 +167,9 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="small"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="clickFastFood:" destination="G9k-sm-Jue" eventType="touchUpInside" id="f1t-gp-gRK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spc-NC-oxt" customClass="SettingButton" customModule="SimpraApp" customModuleProvider="target">
                                                 <rect key="frame" x="199" y="0.0" width="199" height="80"/>
@@ -140,6 +179,9 @@
                                                 <state key="normal" title="Restoran" image="fork">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="clickRestoran:" destination="G9k-sm-Jue" eventType="touchUpInside" id="OdA-lE-2Fb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -168,11 +210,12 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="OA6-lO-LSv" id="9CE-BP-4Oy"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="settingToFastFood" id="GFz-oK-p0S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oU8-7g-YAP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="696" y="66"/>
+            <point key="canvasLocation" x="680" y="67"/>
         </scene>
         <!--Cover Operations View Controller-->
         <scene sceneID="OWn-6v-gvd">
@@ -227,11 +270,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PtW-tJ-6la" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1462.3188405797102" y="95.758928571428569"/>
+            <point key="canvasLocation" x="1451" y="67"/>
+        </scene>
+        <!--Search Table View Controller-->
+        <scene sceneID="m4A-7U-BhL">
+            <objects>
+                <viewController storyboardIdentifier="SearchTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EHl-jA-UCT" customClass="SearchTableViewController" customModule="SimpraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ey8-xS-Eog">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hME-9K-WtI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="scrollIndicatorInsets" minX="5" minY="0.0" maxX="0.0" maxY="5"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="NHi-wf-2J8">
+                                    <size key="itemSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EHl-jA-UCT" id="dsS-kx-YJl"/>
+                                    <outlet property="delegate" destination="EHl-jA-UCT" id="6Jc-rZ-XWq"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93598202720207246" green="0.93598202720207246" blue="0.93598202720207246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hME-9K-WtI" firstAttribute="leading" secondItem="ey8-xS-Eog" secondAttribute="leading" id="5bj-QA-Kwl"/>
+                            <constraint firstItem="hME-9K-WtI" firstAttribute="top" secondItem="ey8-xS-Eog" secondAttribute="top" id="6et-1x-UDU"/>
+                            <constraint firstAttribute="bottom" secondItem="hME-9K-WtI" secondAttribute="bottom" id="TNv-bZ-Nqw"/>
+                            <constraint firstAttribute="trailing" secondItem="hME-9K-WtI" secondAttribute="trailing" id="w1H-yu-hCy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H0G-lA-bfM"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="hME-9K-WtI" id="PHu-dO-kv5"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="SearchToFastFood" id="GPj-zh-iWo"/>
+                        <segue destination="y8a-dR-dSR" kind="show" identifier="SearchToRestaurant" id="CEf-gU-NJL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SVi-28-YC8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2163.768115942029" y="66.964285714285708"/>
         </scene>
     </scenes>
     <resources>
         <image name="food" width="27" height="27"/>
         <image name="fork" width="27" height="27"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="iwq-CC-Xmn"/>
+        <segue reference="uwC-vW-jLL"/>
+    </inferredMetricsTieBreakers>
 </document>

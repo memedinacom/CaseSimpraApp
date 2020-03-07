@@ -80,11 +80,11 @@ class SegmentView: UIView, NibReusable {
     //Register Ceollectionview Nib
     func setup() {
         
-        let nib = UINib(nibName: "SegmentOfCollectionVCell", bundle: nil)
-        collectionViewTab.register(nib, forCellWithReuseIdentifier: "SegmentOfCollectionVCell")
+        let nib = UINib(nibName: SEGMENT_OF_COLLECTION_VCELL, bundle: nil)
+        collectionViewTab.register(nib, forCellWithReuseIdentifier: SEGMENT_OF_COLLECTION_VCELL)
         
-        let nibSub = UINib(nibName: "SubSegmentOfCollectionVCell", bundle: nil)
-        collectionViewTab.register(nibSub, forCellWithReuseIdentifier: "SubSegmentOfCollectionVCell")
+        let nibSub = UINib(nibName: SUBSEGMENT_OF_COLLECTION_VCELL, bundle: nil)
+        collectionViewTab.register(nibSub, forCellWithReuseIdentifier: SUBSEGMENT_OF_COLLECTION_VCELL)
         self.flowCollectionView()
         
     }
@@ -120,7 +120,7 @@ extension SegmentView: UICollectionViewDelegate, UICollectionViewDataSource, UIC
         
         switch typeOfSegment {
         case .group:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SegmentOfCollectionVCell", for: indexPath) as! SegmentOfCollectionVCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SEGMENT_OF_COLLECTION_VCELL, for: indexPath) as! SegmentOfCollectionVCell
             
             cell.updateData(dataList[indexPath.row])
             cell.perDel = self
@@ -128,7 +128,7 @@ extension SegmentView: UICollectionViewDelegate, UICollectionViewDataSource, UIC
             self.layoutIfNeeded()
             return cell
         case .subGroup:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SubSegmentOfCollectionVCell", for: indexPath) as! SubSegmentOfCollectionVCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SUBSEGMENT_OF_COLLECTION_VCELL, for: indexPath) as! SubSegmentOfCollectionVCell
             
             cell.updateData(dataList[indexPath.row])
             cell.perDel = self

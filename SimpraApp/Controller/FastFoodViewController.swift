@@ -11,19 +11,12 @@ import Realm
 import RealmSwift
 import CoreData
 
-class FastFoodViewController: UIViewController {
-    struct Score {
-        let score : Int
-        let destination : String
-        let name : String
-        let emoji : String
-    }
-    
-    var allScores:[MenuItem] = []
+class FastFoodViewController: BaseViewController {
+    var productList:[MenuItem] = []
     @IBOutlet private weak var collectionView: UICollectionView!
-    
     @IBOutlet weak var segmentView: SegmentView!
     @IBOutlet weak var subSegmentView: SegmentView!
+    var selectData:Table?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +33,7 @@ class FastFoodViewController: UIViewController {
     fileprivate func fetchData(){
         SimpraApi.products.fetchs(type: ProductResponseModel.self) { [weak self] (response, error) in
             NewLoadingView.shared.hide()
-            self?.collectionView.reloadData()
-            
+            self?.collectionView.setEmptyDataView(title:"Ardağınız Ürün Bulunamadı")
             let itemEtiket = SegmentItem(title: "Etiketler",
                                          id: "1" ,
                                          subList: [SubSegmentItem(title: "Çok Satanlar",
@@ -86,6 +78,11 @@ class FastFoodViewController: UIViewController {
                                                                    id: "33",
                                                                    parentId: SegmentProductId.dessert.rawValue)])
             
+            self?.productList = self?.sortProduct("") ?? []
+            self?.subSegmentView.loadData( itemEtiket.subList!,
+                                           type:.subGroup) { (response) in
+            }
+            self?.collectionView.reloadData()
             
             
             self!.segmentView.loadData([itemEtiket,
@@ -106,8 +103,8 @@ class FastFoodViewController: UIViewController {
         self.segmentView.delegate = self
         self.subSegmentView.delegate = self
         
-        let nib = UINib(nibName: "ProductPreviewCell", bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: "ProductPreviewCell")
+        let nib = UINib(nibName: PRODUCT_PREVIEW_CELL, bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: PRODUCT_PREVIEW_CELL)
         collectionView.allowsSelection = true
         collectionView.allowsMultipleSelection = true
     }
@@ -115,6 +112,7 @@ class FastFoodViewController: UIViewController {
     //Sort Product Lise with group id like Fast Food  , Hot Drink , Cold Drink
     func sortProduct(_ groupId:String) -> [MenuItem]{
         var arr = DataManager.sharedInstance.productModel?.menuItems
+        if groupId.isEmpty{ return arr! }
         
         arr = arr?.filter({ (item1) -> Bool in
             item1.group?.id == groupId
@@ -131,13 +129,13 @@ extension FastFoodViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return allScores.count
+        return productList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductPreviewCell", for: indexPath) as! ProductPreviewCell
-        cell.setup(self, post: allScores[indexPath.row])
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PRODUCT_PREVIEW_CELL, for: indexPath) as! ProductPreviewCell
+        cell.setup(self, post: productList[indexPath.row])
         
         return cell
     }
@@ -157,13 +155,13 @@ extension FastFoodViewController: UICollectionViewDelegate, UICollectionViewData
 extension FastFoodViewController:SegmentViewDelegate{
     func didSubSelectCell(_ data: Any, indexPath index: Int) {
         if let data = data as? SubSegmentItem{
-                self.allScores = self.sortProduct(data.parentId ?? "")
-                self.collectionView.reloadData()
-                //self.segmentView.resetSubCell()
-            }
-            
+            self.productList = self.sortProduct(data.parentId ?? "")
+            self.collectionView.reloadData()
+            //self.segmentView.resetSubCell()
+        }
+        
     }
-
+    
     
     func didSelectCell(_ data: Any) {
         
@@ -174,5 +172,5 @@ extension FastFoodViewController:SegmentViewDelegate{
                                             
             }
         } }
-   
+    
 }

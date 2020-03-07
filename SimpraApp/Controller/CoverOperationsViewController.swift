@@ -35,9 +35,9 @@ class CoverOperationsViewController: BaseViewController {
     func configurationVc(){
         tableView.estimatedRowHeight = 120
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.register(UINib(nibName:"CoverOperationCellTableViewCell",
+        tableView.register(UINib(nibName:COVER_OPERATIONCELL_TABLEVIEW_CELL,
                                  bundle: nil),
-                           forCellReuseIdentifier: "CoverOperationCellTableViewCell")
+                           forCellReuseIdentifier: COVER_OPERATIONCELL_TABLEVIEW_CELL)
         tableView.separatorColor = UIColor.lightText
         tableView.delegate = self
         tableView.dataSource = self
@@ -54,7 +54,7 @@ extension CoverOperationsViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CoverOperationCellTableViewCell",
+        let cell = tableView.dequeueReusableCell(withIdentifier: COVER_OPERATIONCELL_TABLEVIEW_CELL,
                                                  for: indexPath) as! CoverOperationCellTableViewCell
         cell.updateData(data: list[indexPath.row])
         

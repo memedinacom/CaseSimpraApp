@@ -34,6 +34,17 @@
 		7A7151B6241036E50013CBC1 /* StepperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7151B5241036E50013CBC1 /* StepperButton.swift */; };
 		7A7151C32410EFC20013CBC1 /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7151C22410EFC20013CBC1 /* EmployeeModel.swift */; };
 		7A7151C5241123930013CBC1 /* SimpraNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7151C4241123930013CBC1 /* SimpraNotify.swift */; };
+		7A7151CE24127E6E0013CBC1 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7151CD24127E6E0013CBC1 /* SearchTableViewController.swift */; };
+		7A7151D0241281C50013CBC1 /* RestoranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7151CF241281C50013CBC1 /* RestoranViewController.swift */; };
+		7A7151D224128F7C0013CBC1 /* RestoranViewController+Navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7151D124128F7C0013CBC1 /* RestoranViewController+Navbar.swift */; };
+		7A8330662412D25D00E0A49D /* TableCollectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8330642412D25D00E0A49D /* TableCollectionsCell.swift */; };
+		7A8330672412D25D00E0A49D /* TableCollectionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8330652412D25D00E0A49D /* TableCollectionsCell.xib */; };
+		7A8330692412E35300E0A49D /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8330682412E35300E0A49D /* NSArray.swift */; };
+		7A83306B2413018100E0A49D /* UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A83306A2413018100E0A49D /* UINavigationItem.swift */; };
+		7A83306D2413020700E0A49D /* SimpraBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A83306C2413020700E0A49D /* SimpraBarButtonItem.swift */; };
+		7A8330742413207800E0A49D /* SimpraEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8330732413207800E0A49D /* SimpraEmptyView.swift */; };
+		7A8330762413208A00E0A49D /* SimpraEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8330752413208A00E0A49D /* SimpraEmptyView.xib */; };
+		7A8330782413214800E0A49D /* UITableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8330772413214800E0A49D /* UITableview.swift */; };
 		7A878DA824085A9200DA473B /* SimpraDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A878DA724085A9200DA473B /* SimpraDB.swift */; };
 		7A878DB124085C9F00DA473B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A878DB024085C9F00DA473B /* Enums.swift */; };
 		7A8CE55C240B05D0000E5AD2 /* EmployeesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8CE54B240B05D0000E5AD2 /* EmployeesResponseModel.swift */; };
@@ -107,6 +118,19 @@
 		7A7151B5241036E50013CBC1 /* StepperButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperButton.swift; sourceTree = "<group>"; };
 		7A7151C22410EFC20013CBC1 /* EmployeeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
 		7A7151C4241123930013CBC1 /* SimpraNotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpraNotify.swift; sourceTree = "<group>"; };
+		7A7151CD24127E6E0013CBC1 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		7A7151CF241281C50013CBC1 /* RestoranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoranViewController.swift; sourceTree = "<group>"; };
+		7A7151D124128F7C0013CBC1 /* RestoranViewController+Navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestoranViewController+Navbar.swift"; sourceTree = "<group>"; };
+		7A8330642412D25D00E0A49D /* TableCollectionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCollectionsCell.swift; sourceTree = "<group>"; };
+		7A8330652412D25D00E0A49D /* TableCollectionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCollectionsCell.xib; sourceTree = "<group>"; };
+		7A8330682412E35300E0A49D /* NSArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSArray.swift; sourceTree = "<group>"; };
+		7A83306A2413018100E0A49D /* UINavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationItem.swift; sourceTree = "<group>"; };
+		7A83306C2413020700E0A49D /* SimpraBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpraBarButtonItem.swift; sourceTree = "<group>"; };
+		7A8330732413207800E0A49D /* SimpraEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpraEmptyView.swift; sourceTree = "<group>"; };
+		7A8330752413208A00E0A49D /* SimpraEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpraEmptyView.xib; sourceTree = "<group>"; };
+		7A8330772413214800E0A49D /* UITableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableview.swift; sourceTree = "<group>"; };
+		7A83307D24132FE100E0A49D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A83307E24132FE100E0A49D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A878DA724085A9200DA473B /* SimpraDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpraDB.swift; sourceTree = "<group>"; };
 		7A878DB024085C9F00DA473B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		7A8CE54B240B05D0000E5AD2 /* EmployeesResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesResponseModel.swift; sourceTree = "<group>"; };
@@ -144,10 +168,8 @@
 		7AEFE4882408301700688933 /* SimpraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AEFE48B2408301700688933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AEFE48D2408301700688933 /* FastFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastFoodViewController.swift; sourceTree = "<group>"; };
-		7AEFE4902408301700688933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AEFE4932408301700688933 /* SimpraApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpraApp.xcdatamodel; sourceTree = "<group>"; };
 		7AEFE4952408301900688933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7AEFE4982408301900688933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AEFE49A2408301900688933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AEFE4A12408315E00688933 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		7BA8209A2293C8F33E394472 /* Pods_SimpraApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpraApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +242,15 @@
 				7AEFE48F2408301700688933 /* Main.storyboard */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		7A8330702413200C00E0A49D /* emptyDataView */ = {
+			isa = PBXGroup;
+			children = (
+				7A8330732413207800E0A49D /* SimpraEmptyView.swift */,
+				7A8330752413208A00E0A49D /* SimpraEmptyView.xib */,
+			);
+			path = emptyDataView;
 			sourceTree = "<group>";
 		};
 		7A878D982408378C00DA473B /* Model */ = {
@@ -300,6 +331,7 @@
 				7A7151B5241036E50013CBC1 /* StepperButton.swift */,
 				7A42F301240EE7C0009B94A2 /* SettingButton.swift */,
 				7A7151C4241123930013CBC1 /* SimpraNotify.swift */,
+				7A83306C2413020700E0A49D /* SimpraBarButtonItem.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -352,6 +384,9 @@
 				7A42F2E4240B31FA009B94A2 /* FastFoodViewController+Navbar.swift */,
 				7A42F2FF240EE23E009B94A2 /* SettingViewController.swift */,
 				7A42F307240EFD46009B94A2 /* CoverOperationsViewController.swift */,
+				7A7151CD24127E6E0013CBC1 /* SearchTableViewController.swift */,
+				7A7151CF241281C50013CBC1 /* RestoranViewController.swift */,
+				7A7151D124128F7C0013CBC1 /* RestoranViewController+Navbar.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -359,6 +394,8 @@
 		7A8CE57B240B1B4D000E5AD2 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				7A8330702413200C00E0A49D /* emptyDataView */,
+				7AD471612412B76D007349A0 /* tableCollectionsCell */,
 				7A7151AA240F9F470013CBC1 /* operationCell */,
 				7A7151A9240F9F3C0013CBC1 /* settingCell */,
 				7A42F2E8240BE5A5009B94A2 /* tabSections */,
@@ -381,6 +418,9 @@
 				7A8CE58D240B2527000E5AD2 /* UIViewController.swift */,
 				7A37BCBC240B3880005AA776 /* UIView.swift */,
 				7A42F2FB240CF97C009B94A2 /* Constants.swift */,
+				7A8330682412E35300E0A49D /* NSArray.swift */,
+				7A83306A2413018100E0A49D /* UINavigationItem.swift */,
+				7A8330772413214800E0A49D /* UITableview.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -420,6 +460,15 @@
 				7ACCA4492409EC7E00150248 /* MenuItemGroup.swift */,
 			);
 			path = GroupdResponse;
+			sourceTree = "<group>";
+		};
+		7AD471612412B76D007349A0 /* tableCollectionsCell */ = {
+			isa = PBXGroup;
+			children = (
+				7A8330642412D25D00E0A49D /* TableCollectionsCell.swift */,
+				7A8330652412D25D00E0A49D /* TableCollectionsCell.xib */,
+			);
+			path = tableCollectionsCell;
 			sourceTree = "<group>";
 		};
 		7AEFE47F2408301700688933 = {
@@ -552,11 +601,13 @@
 				7A42F2EB240BE5BC009B94A2 /* SegmentView.xib in Resources */,
 				7A42F306240EF3C1009B94A2 /* SettingTableViewCell.xib in Resources */,
 				7ACCA42E2409934300150248 /* default.realm in Resources */,
+				7A8330762413208A00E0A49D /* SimpraEmptyView.xib in Resources */,
 				7A42F2EF240BE5D9009B94A2 /* SegmentOfCollectionVCell.xib in Resources */,
 				7A7151B0240F9F900013CBC1 /* CoverOperationCellTableViewCell.xib in Resources */,
 				7A37BCC1240B46ED005AA776 /* ProductPreviewCell.xib in Resources */,
 				7A8CE579240B19EE000E5AD2 /* Login.storyboard in Resources */,
 				7AEFE4912408301700688933 /* Main.storyboard in Resources */,
+				7A8330672412D25D00E0A49D /* TableCollectionsCell.xib in Resources */,
 				7A42F2F9240C54C1009B94A2 /* SubSegmentOfCollectionVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,6 +661,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8330692412E35300E0A49D /* NSArray.swift in Sources */,
 				7A8CE55E240B05D0000E5AD2 /* Discount.swift in Sources */,
 				7ACCA4452409EC3300150248 /* Section.swift in Sources */,
 				7A42F2E5240B31FA009B94A2 /* FastFoodViewController+Navbar.swift in Sources */,
@@ -623,6 +675,7 @@
 				7A8CE570240B12F8000E5AD2 /* BaseViewController.swift in Sources */,
 				7A37BCC0240B46ED005AA776 /* ProductPreviewCell.swift in Sources */,
 				7ACCA44B2409EC7F00150248 /* Group.swift in Sources */,
+				7A8330742413207800E0A49D /* SimpraEmptyView.swift in Sources */,
 				7AEFE48E2408301700688933 /* FastFoodViewController.swift in Sources */,
 				7A42F2F2240BE6A1009B94A2 /* Reusable.swift in Sources */,
 				7A8CE562240B05D0000E5AD2 /* TenderMedia.swift in Sources */,
@@ -630,6 +683,7 @@
 				7A8CE564240B05D0000E5AD2 /* RevenueCenter.swift in Sources */,
 				7A37BCBD240B3880005AA776 /* UIView.swift in Sources */,
 				7A8CE57D240B1B72000E5AD2 /* BaseRoundedTextFied.swift in Sources */,
+				7A8330662412D25D00E0A49D /* TableCollectionsCell.swift in Sources */,
 				7A8CE563240B05D0000E5AD2 /* Table.swift in Sources */,
 				7A8CE58E240B2527000E5AD2 /* UIViewController.swift in Sources */,
 				7ACCA44E2409EC7F00150248 /* GroupsResponseModel.swift in Sources */,
@@ -640,7 +694,9 @@
 				7A8CE582240B1C29000E5AD2 /* UIFont.swift in Sources */,
 				7A8CE566240B05D0000E5AD2 /* MenuItem.swift in Sources */,
 				7A42F2E7240BC914009B94A2 /* SimpraLabel.swift in Sources */,
+				7A83306B2413018100E0A49D /* UINavigationItem.swift in Sources */,
 				7A8CE568240B05D0000E5AD2 /* ProductResponseModel.swift in Sources */,
+				7A7151CE24127E6E0013CBC1 /* SearchTableViewController.swift in Sources */,
 				7A8CE55C240B05D0000E5AD2 /* EmployeesResponseModel.swift in Sources */,
 				7A42F2F6240BE6E9009B94A2 /* UIView+Additions.swift in Sources */,
 				7A7151C5241123930013CBC1 /* SimpraNotify.swift in Sources */,
@@ -650,16 +706,20 @@
 				7A8CE573240B14D5000E5AD2 /* LoadingHandler.swift in Sources */,
 				7A7151AF240F9F900013CBC1 /* CoverOperationCellTableViewCell.swift in Sources */,
 				7A7151B6241036E50013CBC1 /* StepperButton.swift in Sources */,
+				7A8330782413214800E0A49D /* UITableview.swift in Sources */,
 				7A42F2E3240B2D06009B94A2 /* DataManager.swift in Sources */,
 				7ACCA4442409EC3300150248 /* SectionResponse.swift in Sources */,
 				7A42F302240EE7C0009B94A2 /* SettingButton.swift in Sources */,
+				7A7151D224128F7C0013CBC1 /* RestoranViewController+Navbar.swift in Sources */,
 				7A878DB124085C9F00DA473B /* Enums.swift in Sources */,
 				7A878DA824085A9200DA473B /* SimpraDB.swift in Sources */,
 				7AEFE4942408301700688933 /* SimpraApp.xcdatamodeld in Sources */,
+				7A7151D0241281C50013CBC1 /* RestoranViewController.swift in Sources */,
 				7A8CE585240B1E9C000E5AD2 /* RoundedButton.swift in Sources */,
 				7A42F2FA240C54C1009B94A2 /* SubSegmentOfCollectionVCell.swift in Sources */,
 				7A42F305240EF3C1009B94A2 /* SettingTableViewCell..swift in Sources */,
 				7ACCA44D2409EC7F00150248 /* MenuItemGroup.swift in Sources */,
+				7A83306D2413020700E0A49D /* SimpraBarButtonItem.swift in Sources */,
 				7A8CE560240B05D0000E5AD2 /* ViewOption.swift in Sources */,
 				7A8CE56E240B12B9000E5AD2 /* LoginViewController.swift in Sources */,
 				7A42F2EC240BE5BC009B94A2 /* SegmentView.swift in Sources */,
@@ -674,7 +734,7 @@
 		7AEFE48F2408301700688933 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7AEFE4902408301700688933 /* Base */,
+				7A83307D24132FE100E0A49D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -682,7 +742,7 @@
 		7AEFE4972408301900688933 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7AEFE4982408301900688933 /* Base */,
+				7A83307E24132FE100E0A49D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -694,6 +754,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -755,6 +816,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

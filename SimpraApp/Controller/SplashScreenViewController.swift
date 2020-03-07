@@ -16,8 +16,12 @@ class SplashScreenViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        guard let db = try? SimpraDB() else { return }
+        SimpraApi.tables.fetchs(type: TablesResponseModel.self) { [weak self] (response, error) in
+            self?.dataManagement()
+        }
+    }
+    
+    func dataManagement(){ guard let db = try? SimpraDB() else { return }
         db.isValidDataEmployee() ? redirectLogin() : saveData()
     }
     

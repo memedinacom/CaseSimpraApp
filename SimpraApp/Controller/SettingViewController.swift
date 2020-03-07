@@ -18,12 +18,24 @@ class SettingViewController: BaseViewController {
         self.configurationVc()
     }
     
+    @IBAction func clickFastFood(_ sender: Any) {
+        self.dismiss(animated: true) { [weak self] in
+            self?.goFastFoodViewController()
+        }
+    }
+    
+    @IBAction func clickRestoran(_ sender: Any) {
+        self.dismiss(animated: true){  [weak self] in
+            self?.goRestoranViewController()
+        }
+    }
+    
     //Configuration Viewc Controller
     func configurationVc(){
         tableView.map {
             $0.estimatedRowHeight = 120
             $0.rowHeight = UITableView.automaticDimension
-            $0.register(UINib(nibName:"SettingTableViewCell", bundle: nil), forCellReuseIdentifier: "SettingTableViewCell")
+            $0.register(UINib(nibName:SETTING_TABLEVIEW_CELL, bundle: nil), forCellReuseIdentifier: SETTING_TABLEVIEW_CELL)
             $0.separatorColor = UIColor.lightText
         }
     }
@@ -45,8 +57,9 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingTableViewCell", for: indexPath) as! SettingTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: SETTING_TABLEVIEW_CELL, for: indexPath) as! SettingTableViewCell
         cell.perDelegate = self
+        cell.lbnTitle.text = "Ayarlar  \(indexPath.row)"
 
         return cell;
     }
