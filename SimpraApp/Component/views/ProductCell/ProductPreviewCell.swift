@@ -36,8 +36,17 @@ class ProductPreviewCell: UICollectionViewCell {
         
     }
     @IBAction private func didSelect() {
+                    guard let db = try? SimpraDB() else {return}
+
         //        Int64(truncating: NSNumber(integerLiteral: post.owner!.id!))
         self.delegate?.didSelectPost(with: product.id!)
+        
+        
+        let cartModel = ProductItem()
+        cartModel.id = product.id!
+        cartModel.price = Int(Double(product.price!))
+        cartModel.name = product.name!
+        db.addBasketItem(cartModel)
         self.showAnimation()
     }
     

@@ -88,3 +88,10 @@ import Foundation
     
     
 }
+
+
+class ProductItem: Object {
+    @objc dynamic var id = ""
+    @objc dynamic var name = ""
+    @objc dynamic var price = 0
+}

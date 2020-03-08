@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             migrationBlock:{migration, oldSchemaVersion in })
         
         Realm.Configuration.defaultConfiguration = con
-
+        //Realm.Configuration.defaultConfiguration.inMemoryIdentifier = "1"
         
         return true
     }
