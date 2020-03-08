@@ -21,6 +21,8 @@ class SimpraDB {
     }
     
     //Employee save data
+    /// Müşterileri json urlden ççekip dpye yazar
+    /// - Parameter data: EmployeeModel
     func saveUserData(_ data: EmployeeModel){
         do {
             try realm.write {
@@ -58,6 +60,8 @@ class SimpraDB {
        }
     
     
+    /// Tıklanan ürün DB ye kaydedilir. aynı üründen varsa basketCount 1 arttırılır
+    /// - Parameter product: ProductItem ürün modeli
      func addBasketItem(_ product: ProductItem)
     {
         let foundItem = realm.objects(ProductItem.self)
@@ -78,8 +82,6 @@ class SimpraDB {
                 }
             }
             // Ürün sepette ise sayısı 1 arttırılıyor.
-           
-               
         }
     }
   

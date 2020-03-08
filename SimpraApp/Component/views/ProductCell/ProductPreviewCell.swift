@@ -36,9 +36,7 @@ class ProductPreviewCell: UICollectionViewCell {
         
     }
     @IBAction private func didSelect() {
-                    guard let db = try? SimpraDB() else {return}
-
-        //        Int64(truncating: NSNumber(integerLiteral: post.owner!.id!))
+        guard let db = try? SimpraDB() else {return}
         self.delegate?.didSelectPost(with: product.id!)
         
         let cartModel = ProductItem()

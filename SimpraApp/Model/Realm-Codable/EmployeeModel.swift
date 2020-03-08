@@ -89,7 +89,7 @@ import Foundation
     
 }
 
-
+//Realm DB için Product Item oluşturuldu.
 class ProductItem: Object {
     @objc dynamic var id = UUID().uuidString
     @objc dynamic var name = ""
