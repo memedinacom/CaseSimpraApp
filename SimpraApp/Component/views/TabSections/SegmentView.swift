@@ -33,8 +33,6 @@ class SegmentView: UIView, NibReusable {
     // MARK: - Outlets
     
     @IBOutlet private weak var titleLabe: RoundedButton!
-    
-    
     @IBOutlet weak var collectionViewHeightConstrait: NSLayoutConstraint!
     @IBOutlet private weak var collectionViewTab: UICollectionView!
     // MARK: - Properties

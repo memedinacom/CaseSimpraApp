@@ -35,7 +35,7 @@
 		7A7151C32410EFC20013CBC1 /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7151C22410EFC20013CBC1 /* EmployeeModel.swift */; };
 		7A7151C5241123930013CBC1 /* SimpraNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7151C4241123930013CBC1 /* SimpraNotify.swift */; };
 		7A7151CE24127E6E0013CBC1 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7151CD24127E6E0013CBC1 /* SearchTableViewController.swift */; };
-		7A7151D0241281C50013CBC1 /* RestoranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7151CF241281C50013CBC1 /* RestoranViewController.swift */; };
+		7A7151D0241281C50013CBC1 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7151CF241281C50013CBC1 /* RestaurantViewController.swift */; };
 		7A7151D224128F7C0013CBC1 /* RestoranViewController+Navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7151D124128F7C0013CBC1 /* RestoranViewController+Navbar.swift */; };
 		7A8330662412D25D00E0A49D /* TableCollectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8330642412D25D00E0A49D /* TableCollectionsCell.swift */; };
 		7A8330672412D25D00E0A49D /* TableCollectionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8330652412D25D00E0A49D /* TableCollectionsCell.xib */; };
@@ -119,7 +119,7 @@
 		7A7151C22410EFC20013CBC1 /* EmployeeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
 		7A7151C4241123930013CBC1 /* SimpraNotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpraNotify.swift; sourceTree = "<group>"; };
 		7A7151CD24127E6E0013CBC1 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
-		7A7151CF241281C50013CBC1 /* RestoranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoranViewController.swift; sourceTree = "<group>"; };
+		7A7151CF241281C50013CBC1 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		7A7151D124128F7C0013CBC1 /* RestoranViewController+Navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestoranViewController+Navbar.swift"; sourceTree = "<group>"; };
 		7A8330642412D25D00E0A49D /* TableCollectionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCollectionsCell.swift; sourceTree = "<group>"; };
 		7A8330652412D25D00E0A49D /* TableCollectionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCollectionsCell.xib; sourceTree = "<group>"; };
@@ -188,7 +188,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7A42F2E8240BE5A5009B94A2 /* tabSections */ = {
+		7A42F2E8240BE5A5009B94A2 /* TabSections */ = {
 			isa = PBXGroup;
 			children = (
 				7A42F2F8240C54C0009B94A2 /* SubSegmentOfCollectionVCell.swift */,
@@ -198,25 +198,25 @@
 				7A42F2EA240BE5BC009B94A2 /* SegmentView.swift */,
 				7A42F2E9240BE5BC009B94A2 /* SegmentView.xib */,
 			);
-			path = tabSections;
+			path = TabSections;
 			sourceTree = "<group>";
 		};
-		7A7151A9240F9F3C0013CBC1 /* settingCell */ = {
+		7A7151A9240F9F3C0013CBC1 /* SettingCell */ = {
 			isa = PBXGroup;
 			children = (
 				7A42F304240EF3C1009B94A2 /* SettingTableViewCell.xib */,
 				7A42F303240EF3C1009B94A2 /* SettingTableViewCell..swift */,
 			);
-			path = settingCell;
+			path = SettingCell;
 			sourceTree = "<group>";
 		};
-		7A7151AA240F9F470013CBC1 /* operationCell */ = {
+		7A7151AA240F9F470013CBC1 /* OperationCell */ = {
 			isa = PBXGroup;
 			children = (
 				7A7151AD240F9F900013CBC1 /* CoverOperationCellTableViewCell.swift */,
 				7A7151AE240F9F900013CBC1 /* CoverOperationCellTableViewCell.xib */,
 			);
-			path = operationCell;
+			path = OperationCell;
 			sourceTree = "<group>";
 		};
 		7A7151C12410EFB90013CBC1 /* Realm-Codable */ = {
@@ -244,13 +244,13 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		7A8330702413200C00E0A49D /* emptyDataView */ = {
+		7A8330702413200C00E0A49D /* EmptyDataView */ = {
 			isa = PBXGroup;
 			children = (
 				7A8330732413207800E0A49D /* SimpraEmptyView.swift */,
 				7A8330752413208A00E0A49D /* SimpraEmptyView.xib */,
 			);
-			path = emptyDataView;
+			path = EmptyDataView;
 			sourceTree = "<group>";
 		};
 		7A878D982408378C00DA473B /* Model */ = {
@@ -376,17 +376,17 @@
 		7A8CE57A240B1A53000E5AD2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7A8CE56F240B12F8000E5AD2 /* BaseViewController.swift */,
-				7A8CE588240B2365000E5AD2 /* SplashScreenViewController.swift */,
 				7AEFE48B2408301700688933 /* AppDelegate.swift */,
+				7A8CE588240B2365000E5AD2 /* SplashScreenViewController.swift */,
 				7A8CE56D240B12B9000E5AD2 /* LoginViewController.swift */,
 				7AEFE48D2408301700688933 /* FastFoodViewController.swift */,
 				7A42F2E4240B31FA009B94A2 /* FastFoodViewController+Navbar.swift */,
 				7A42F2FF240EE23E009B94A2 /* SettingViewController.swift */,
 				7A42F307240EFD46009B94A2 /* CoverOperationsViewController.swift */,
 				7A7151CD24127E6E0013CBC1 /* SearchTableViewController.swift */,
-				7A7151CF241281C50013CBC1 /* RestoranViewController.swift */,
+				7A7151CF241281C50013CBC1 /* RestaurantViewController.swift */,
 				7A7151D124128F7C0013CBC1 /* RestoranViewController+Navbar.swift */,
+				7A8CE56F240B12F8000E5AD2 /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -394,11 +394,11 @@
 		7A8CE57B240B1B4D000E5AD2 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				7A8330702413200C00E0A49D /* emptyDataView */,
-				7AD471612412B76D007349A0 /* tableCollectionsCell */,
-				7A7151AA240F9F470013CBC1 /* operationCell */,
-				7A7151A9240F9F3C0013CBC1 /* settingCell */,
-				7A42F2E8240BE5A5009B94A2 /* tabSections */,
+				7A8330702413200C00E0A49D /* EmptyDataView */,
+				7AD471612412B76D007349A0 /* TableCollectionsCell */,
+				7A7151AA240F9F470013CBC1 /* OperationCell */,
+				7A7151A9240F9F3C0013CBC1 /* SettingCell */,
+				7A42F2E8240BE5A5009B94A2 /* TabSections */,
 				7A8CE583240B1E8B000E5AD2 /* ProductCell */,
 				7A8CE57C240B1B72000E5AD2 /* BaseRoundedTextFied.swift */,
 				7A8CE584240B1E9C000E5AD2 /* RoundedButton.swift */,
@@ -462,13 +462,13 @@
 			path = GroupdResponse;
 			sourceTree = "<group>";
 		};
-		7AD471612412B76D007349A0 /* tableCollectionsCell */ = {
+		7AD471612412B76D007349A0 /* TableCollectionsCell */ = {
 			isa = PBXGroup;
 			children = (
 				7A8330642412D25D00E0A49D /* TableCollectionsCell.swift */,
 				7A8330652412D25D00E0A49D /* TableCollectionsCell.xib */,
 			);
-			path = tableCollectionsCell;
+			path = TableCollectionsCell;
 			sourceTree = "<group>";
 		};
 		7AEFE47F2408301700688933 = {
@@ -714,7 +714,7 @@
 				7A878DB124085C9F00DA473B /* Enums.swift in Sources */,
 				7A878DA824085A9200DA473B /* SimpraDB.swift in Sources */,
 				7AEFE4942408301700688933 /* SimpraApp.xcdatamodeld in Sources */,
-				7A7151D0241281C50013CBC1 /* RestoranViewController.swift in Sources */,
+				7A7151D0241281C50013CBC1 /* RestaurantViewController.swift in Sources */,
 				7A8CE585240B1E9C000E5AD2 /* RoundedButton.swift in Sources */,
 				7A42F2FA240C54C1009B94A2 /* SubSegmentOfCollectionVCell.swift in Sources */,
 				7A42F305240EF3C1009B94A2 /* SettingTableViewCell..swift in Sources */,

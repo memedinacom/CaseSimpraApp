@@ -11,6 +11,7 @@ class ProductPreviewCell: UICollectionViewCell {
     @IBOutlet private weak var contentTypeImageView: UIImageView!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var priceLabel: UILabel!
+    @IBOutlet private weak var lineView: UIView!
 
     
     // MARK: - Properties
@@ -33,6 +34,11 @@ class ProductPreviewCell: UICollectionViewCell {
         self.descriptionLabel.text = post.name
         self.priceLabel.text = "\(post.price!) TRY"
         self.product = post
+        if (Double(post.price ?? 0.0) > 5.0) {
+            lineView.backgroundColor = .orange
+        }else{
+            lineView.backgroundColor = .clear
+        }
         
     }
     @IBAction private func didSelect() {

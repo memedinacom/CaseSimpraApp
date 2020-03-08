@@ -39,23 +39,23 @@
                                         <rect key="frame" x="0.0" y="88" width="414" height="720"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dRF-9f-ofG">
-                                                <rect key="frame" x="15" y="15" width="384" height="400"/>
+                                                <rect key="frame" x="15" y="15" width="384" height="265"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="k3h-E9-o58" userLabel="Yeni Satis">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="335"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="200"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vki-Zv-j61">
-                                                                <rect key="frame" x="0.0" y="0.0" width="384" height="225"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="384" height="90"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="EMJ-rR-RT3">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="225"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="90"/>
                                                                     </imageView>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="olf-ao-hUW">
-                                                                <rect key="frame" x="0.0" y="230" width="384" height="50"/>
+                                                                <rect key="frame" x="0.0" y="95" width="384" height="50"/>
                                                                 <subviews>
-                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2SB-Fb-uhS" userLabel="username" customClass="RoundedTextField" customModule="SimpraApp" customModuleProvider="target">
+                                                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hasan Soysal" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2SB-Fb-uhS" userLabel="username" customClass="RoundedTextField" customModule="SimpraApp" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="50"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="50" id="UUX-5F-2Eg"/>
@@ -66,14 +66,17 @@
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
                                                                                 <real key="value" value="8"/>
                                                                             </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="alpha">
+                                                                                <real key="value" value="0.5"/>
+                                                                            </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </textField>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lqd-7r-vvD">
-                                                                <rect key="frame" x="0.0" y="285" width="384" height="50"/>
+                                                                <rect key="frame" x="0.0" y="150" width="384" height="50"/>
                                                                 <subviews>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jaH-tx-aGI" customClass="RoundedTextField" customModule="SimpraApp" customModuleProvider="target">
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jaH-tx-aGI" customClass="RoundedTextField" customModule="SimpraApp" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="50"/>
                                                                         <accessibility key="accessibilityConfiguration" hint="Cep Telefonu"/>
                                                                         <constraints>
@@ -87,7 +90,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSR-5l-FIQ" customClass="RoundedButton" customModule="SimpraApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="350" width="384" height="50"/>
+                                                        <rect key="frame" x="0.0" y="215" width="384" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="Nne-E6-eEg"/>
                                                         </constraints>
@@ -138,6 +141,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="225" height="225"/>
+        <image name="logo" width="220" height="90"/>
     </resources>
 </document>
