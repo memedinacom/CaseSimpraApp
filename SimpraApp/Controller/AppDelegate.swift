@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.keyboardManagerSetSetting()
         
         let con = Realm.Configuration(
-            schemaVersion: 1,
+            schemaVersion: 3,
             migrationBlock:{migration, oldSchemaVersion in })
         
         Realm.Configuration.defaultConfiguration = con

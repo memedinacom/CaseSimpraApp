@@ -91,7 +91,8 @@ import Foundation
 
 
 class ProductItem: Object {
-    @objc dynamic var id = ""
+    @objc dynamic var id = UUID().uuidString
     @objc dynamic var name = ""
     @objc dynamic var price = 0
+    @objc dynamic var basketCount = 1
 }

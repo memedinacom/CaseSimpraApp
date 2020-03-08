@@ -60,18 +60,25 @@ class SimpraDB {
     
      func addBasketItem(_ product: ProductItem)
     {
-        var foundItem = realm.objects(ProductItem.self)
+        let foundItem = realm.objects(ProductItem.self)
                 .filter("id == %@", product.id)
         if foundItem.count == 0 {
             try! realm.write {
                        realm.add(product)
                    }
         }else{
-            // Ürün sepette ise sayısı 1 arttırılıyor.
-            if let item = foundItem.first{
-                //item.basketCount = item.basketCount + 1
-                 //try! realm.add(item, update: .modified)
+            do {
+                if let item = foundItem.first{
+                    
+                    try! realm.write {
+                        item.basketCount = item.basketCount + 1
+                        realm.add(item)
+                    }
+                    
+                }
             }
+            // Ürün sepette ise sayısı 1 arttırılıyor.
+           
                
         }
     }

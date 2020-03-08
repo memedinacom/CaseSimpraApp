@@ -41,7 +41,6 @@ class ProductPreviewCell: UICollectionViewCell {
         //        Int64(truncating: NSNumber(integerLiteral: post.owner!.id!))
         self.delegate?.didSelectPost(with: product.id!)
         
-        
         let cartModel = ProductItem()
         cartModel.id = product.id!
         cartModel.price = Int(Double(product.price!))
